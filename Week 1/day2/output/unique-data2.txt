@@ -1,0 +1,3 @@
+Concurrency allows multiple tasks to run in parallel
+Node.js uses an event-driven architecture
+Promises help manage async operations

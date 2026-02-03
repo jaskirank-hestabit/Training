@@ -1,0 +1,23 @@
+[
+  {
+    "file": "output/unique-data1.txt",
+    "flag": "--lines",
+    "result": 4,
+    "executionTimeMs": 4.47,
+    "memoryMB": -0.24
+  },
+  {
+    "file": "data2.txt",
+    "flag": "--words",
+    "result": 31,
+    "executionTimeMs": 4.39,
+    "memoryMB": -0.24
+  },
+  {
+    "file": "data3.txt",
+    "flag": "--chars",
+    "result": 160,
+    "executionTimeMs": 4.38,
+    "memoryMB": -0.24
+  }
+]

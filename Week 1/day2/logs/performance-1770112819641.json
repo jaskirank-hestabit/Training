@@ -1,0 +1,9 @@
+[
+  {
+    "file": "data1.txt",
+    "flag": "--lines",
+    "result": 6,
+    "executionTimeMs": 1.52,
+    "memoryMB": 0.01
+  }
+]

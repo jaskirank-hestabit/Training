@@ -1,0 +1,23 @@
+[
+  {
+    "file": "data1.txt",
+    "flag": "--lines",
+    "result": 6,
+    "executionTimeMs": 28.98,
+    "memoryMB": -0.2
+  },
+  {
+    "file": "data2.txt",
+    "flag": "--words",
+    "result": 31,
+    "executionTimeMs": 28.85,
+    "memoryMB": -0.2
+  },
+  {
+    "file": "data3.txt",
+    "flag": "--chars",
+    "result": 160,
+    "executionTimeMs": 28.45,
+    "memoryMB": -0.21
+  }
+]

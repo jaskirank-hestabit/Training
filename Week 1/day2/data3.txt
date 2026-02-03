@@ -1,0 +1,5 @@
+This is a simple text file
+This file is used to test character counting
+This is a simple text file
+Each line adds more characters
+Each line adds more characters

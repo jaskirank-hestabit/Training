@@ -1,0 +1,4 @@
+Node.js is fast and powerful
+CLI tools are fun to build
+Learning concurrency is important
+Node.js makes JavaScript powerful
