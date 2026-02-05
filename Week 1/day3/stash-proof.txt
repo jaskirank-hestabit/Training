@@ -1,0 +1,8 @@
+Stash scenario:
+
+1. Modified task.js on main without committing
+2. Used git stash to save changes
+3. Switched to release/v0.1 branch safely
+4. Restored changes using git stash apply and cleaned stash with git stash drop
+5. Working tree restored successfully
+6. Commited the restored changes 
