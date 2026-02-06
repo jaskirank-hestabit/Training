@@ -130,3 +130,39 @@ Documented link headers and page navigation
 2) pagination-analysis.md
 3) Exported Postman collection (.json)
 4) server.js
+
+
+## Day 5 — Automation & Mini-CI Pipeline
+
+Day 5 focused on basic automation, validation before commits, and task scheduling — simulating a lightweight CI workflow.
+
+### Work Done
+
+- Built a shell script `healthcheck.sh` to perform server health checks:
+  - Pings a target server once per execution
+  - Logs failures to `logs/health.log`
+  - Designed to be executed via cron (no infinite loops)
+
+- Set up **Husky pre-commit hooks** to enforce:
+  - `.env` file is not committed
+  - JavaScript files are properly formatted and skips it if no javascript file found
+  - Log files are ignored by Git
+
+- Implemented packaging automation:
+  - Created `bundle-<timestamp>.zip` containing:
+    - `src/`
+    - `logs/`
+    - `checksums.sha1`
+  - Generated SHA1 checksums to verify bundle integrity
+
+- Configured **cron scheduling** to run `healthcheck.sh` every 5 minutes
+  - Verified execution via logs
+  - Captured cron configuration as proof
+
+### Deliverables
+
+1) `healthcheck.sh`  
+2) Husky pre-commit hook screenshots (failed & passed)  
+3) `bundle-1770370515.zip`  
+4) `checksums.sha1`  
+5) Screenshot of scheduled cron job
