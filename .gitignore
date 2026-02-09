@@ -1,0 +1,9 @@
+# Environment files
+.env
+
+# Logs
+logs/
+Week 1/day5/logs/
+
+# Dependencies
+node_modules/
