@@ -166,3 +166,40 @@ Day 5 focused on basic automation, validation before commits, and task schedulin
 3) `bundle-1770370515.zip`  
 4) `checksums.sha1`  
 5) Screenshot of scheduled cron job
+
+---
+
+<!-- ~~~~~~~~~~~~~~~~ WEEK 2 ~~~~~~~~~~~~~~~ -->
+# Week 2 — Frontend Fundamentals (HTML + CSS + JavaScript)
+
+Week 2 focuses on building strong frontend foundations by understanding semantic HTML, responsive layouts, and JavaScript for DOM manipulation.
+
+---
+
+## Day 1 — HTML5 + Semantic Layout
+
+Day 1 focused on understanding page structure and building a blog layout using **only semantic HTML5**, without CSS or JavaScript.
+
+### Key Learnings
+
+- Used semantic HTML5 elements for proper page structure
+- Built layout scaffolding without using `<div>`
+- Created forms with basic validation
+- Embedded images using `<figure>` and `<img>`
+- Applied accessibility basics such as ARIA labels and alt text
+
+### Exercise
+
+Built a **Travel Blog Page** using only semantic HTML, based on the provided Figma reference.
+
+Key features of the blog page:
+- Multiple travel blog posts displayed on a single page
+- Each blog post structured using `<article>`
+- Blog metadata (title, date, author) included
+- Images added using `<figure>` and `<figcaption>`
+- Navigation using semantic `<nav>`
+- Subscription form to receive blog updates
+
+### Deliverables
+
+1) `blog.html`

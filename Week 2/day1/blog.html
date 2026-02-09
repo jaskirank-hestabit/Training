@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A travel blog built using semantic HTML5 only" />
+  <title>Wander Tales</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wander Tales</h1>
+    <p>Travel stories from around the world</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#posts">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#subscribe">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Blog Listing -->
+    <section id="posts">
+      <h2>Latest Travel Blogs</h2>
+
+      <!-- Blog 1 -->
+      <article>
+        <header>
+          <h3>Exploring the Streets of Jaipur</h3>
+          <p>
+            <time datetime="2026-02-04">February 4, 2026</time>
+            • by Jaskiran
+          </p>
+        </header>
+
+        <section>
+          <p>
+            Jaipur, the Pink City of India, is known for its royal palaces,
+            vibrant bazaars, and rich cultural heritage.
+          </p>
+        </section>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1706961121783-4ae6c933983a?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Hawa Mahal in Jaipur"
+            width="400"
+          />
+          <figcaption>Hawa Mahal, Jaipur</figcaption>
+        </figure>
+
+        <footer>
+          <a href="#">Read more</a>
+        </footer>
+      </article>
+
+      <!-- Blog 2 -->
+      <article>
+        <header>
+          <h3>A Peaceful Escape to Manali</h3>
+          <p>
+            <time datetime="2026-02-06">February 6, 2026</time>
+            • by Jaskiran
+          </p>
+        </header>
+
+        <section>
+          <p>
+            Nestled in the Himalayas, Manali offers breathtaking views,
+            snow-capped mountains, and serene landscapes.
+          </p>
+        </section>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1712388430474-ace0c16051e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Mountains in Manali"
+            width="400"
+          />
+          <figcaption>Snowy mountains in Manali</figcaption>
+        </figure>
+
+        <footer>
+          <a href="#">Read more</a>
+        </footer>
+      </article>
+
+      <!-- Blog 3 -->
+      <article>
+        <header>
+          <h3>Sunsets by the Beaches of Goa</h3>
+          <p>
+            <time datetime="2026-02-08">February 8, 2026</time>
+            • by Jaskiran
+          </p>
+        </header>
+
+        <section>
+          <p>
+            Goa is the perfect blend of relaxation and nightlife, with
+            golden beaches, vibrant culture, and stunning sunsets.
+          </p>
+        </section>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+            alt="Sunset at Goa beach"
+            width="400"
+          />
+          <figcaption>Sunset at a Goa beach</figcaption>
+        </figure>
+
+        <footer>
+          <a href="#">Read more</a>
+        </footer>
+      </article>
+
+    </section>
+	
+    <!-- About -->
+    <section id="about">
+      <h2>About Wander Tales</h2>
+      <p>
+        Wander Tales is a travel blog that shares stories, experiences,
+        and insights from destinations around the world. It is created
+        as part of Frontend Fundamentals training to practice semantic
+        HTML5 structure and accessibility.
+      </p>
+    </section>
+
+	<!-- Contact -->
+    <section id="subscribe">
+      <h2>Subscribe to Our Travel Blog</h2>
+
+      <p>
+        Subscribe to Wander Tales to receive updates about new travel blogs,
+        destinations, and stories from around the world.
+      </p>
+
+      <form aria-label="Blog subscription form">
+        <label for="subscriber-name">Name:</label>
+        <input
+          id="subscriber-name"
+          name="name"
+          type="text"
+          placeholder="Your name"
+        />
+
+        <label for="subscriber-email">Email:</label>
+        <input
+          id="subscriber-email"
+          name="email"
+          type="email"
+          placeholder="Your email address"
+          required
+        />
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wander Tales. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
