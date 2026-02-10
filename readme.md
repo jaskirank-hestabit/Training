@@ -203,3 +203,31 @@ Key features of the blog page:
 ### Deliverables
 
 1) `blog.html`
+
+
+## Day 2 — CSS Layout Mastery (Flexbox + Grid)
+
+Day 2 focused on building modern, responsive layouts using **Flexbox** and **CSS Grid**, and applying a mobile-first approach to UI development.
+
+### Work Done
+
+- Practiced **CSS selectors and specificity** through selector challenges
+
+- Built layout components using **Flexbox**:
+  - Responsive navigation bar
+  - Hero section with aligned content
+
+- Implemented a **product grid layout** using **CSS Grid**:
+  - 2-column layout on small screens
+  - 3-column layout on medium screens
+  - 4-column layout on large screens
+
+- Converted a desktop-first layout into a **mobile-first responsive design** using media queries
+
+- Replicated a UI screenshot provided by the mentor using Flexbox
+
+### Deliverables
+
+1) `index.html`  
+2) `style.css`  
+3) UI comparison screenshots (reference vs implementation)
