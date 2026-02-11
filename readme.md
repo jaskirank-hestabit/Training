@@ -231,3 +231,23 @@ Day 2 focused on building modern, responsive layouts using **Flexbox** and **CSS
 1) `index.html`  
 2) `style.css`  
 3) UI comparison screenshots (reference vs implementation)
+
+
+## Day 3 — JavaScript ES6 + DOM Manipulation
+
+Day 3 focused on using modern JavaScript (ES6) and manipulating the DOM without frameworks.
+
+### Work Done - FAQ Accordion
+
+Built an interactive FAQ accordion using JavaScript.
+
+Features:
+- Click to expand/collapse
+- Dynamic + / − toggle
+- Single active accordion at a time
+
+### Deliverables
+
+1) js-dom-practice/index.html  
+2) js-dom-practice/style.css  
+3) js-dom-practice/script.js
