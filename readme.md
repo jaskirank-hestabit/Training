@@ -251,3 +251,24 @@ Features:
 1) js-dom-practice/index.html  
 2) js-dom-practice/style.css  
 3) js-dom-practice/script.js
+
+## Day 4 — JS Utilities + LocalStorage Mini-Project
+
+Day 4 focused on writing modular JavaScript, implementing LocalStorage persistence, and debugging using browser DevTools.
+
+### Work Done — Todo App with LocalStorage
+
+Built a Todo Application using JavaScript.
+
+Features:
+- Add new tasks
+- Edit tasks inline
+- Delete tasks
+- Persist data after refresh using LocalStorage
+- Modern responsive UI styling
+
+### Deliverables
+
+1) day4-todo-app/index.html  
+2) day4-todo-app/style.css  
+3) day4-todo-app/app.js
