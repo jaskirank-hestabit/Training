@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Home</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f3f4f6;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: white;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav h2 {
+      margin: 0;
+      color: #7614b8; /* teal */
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      margin-left: 20px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #6711a1;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #7614b8;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #400766;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to ShopEase</h1>
-  <a href="products.html">View Products</a>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>ShopEase</h2>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">View Products</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to ShopEase</h1>
+    <p>Your one-stop shop for amazing products.</p>
+    <a href="products.html" class="btn">Browse Products</a>
+  </section>
+
 </body>
 </html>

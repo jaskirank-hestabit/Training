@@ -18,6 +18,10 @@ body {
   flex-wrap: wrap;
 }
 
+.navbar h1{
+  color: #7614b8;
+}
+
 .controls {
   display: flex;
   gap: 10px;
