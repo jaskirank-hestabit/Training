@@ -2,14 +2,8 @@ import { Search, User, Settings, Bell } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <header className="h-16 flex items-center justify-between px-8 pt-10">
+    <header className="h-16 flex items-center justify-end px-8 pt-10">
       
-      {/* Left */}
-      <h1 className="text-lg font-semibold text-gray-700">
-        Dashboard
-      </h1>
-
-      {/* Right */}
       <div className="flex items-center gap-6">
         
         {/* Search */}
@@ -37,6 +31,7 @@ export default function Navbar() {
         {/* Notifications */}
         <Bell size={18} className="text-gray-600 cursor-pointer hover:text-black" />
       </div>
+
     </header>
   );
 }

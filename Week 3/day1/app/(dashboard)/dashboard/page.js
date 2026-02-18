@@ -1,54 +1,44 @@
 import StatCard from "@/components/dashboard/StatCard";
-import InfoCardsSection from "@/components/dashboard/InfoCardsSection";
-import { FaWallet, FaUsers, FaUserPlus, FaShoppingCart } from "react-icons/fa";
-import ProjectsOrdersSection from "@/components/dashboard/ProjectOrdersSection";
+import RecentActivity from "@/components/dashboard/RecentActivity";
+import Projects from "@/components/dashboard/Projects";
 
 export default function DashboardPage() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8 pt-10">
       
       {/* Stats Section */}
-      <div className="grid gap-6 
-                      grid-cols-1 
-                      sm:grid-cols-2 
-                      lg:grid-cols-4">
-
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatCard
-          title="Today's Money"
-          value="$53,000"
-          percentage="+55%"
-          isPositive
-          icon={<FaWallet size={18} />}
-        />
-
-        <StatCard
-          title="Today's Users"
+          title="Total Users"
           value="2,300"
-          percentage="+5%"
-          isPositive
-          icon={<FaUsers size={18} />}
+          badgeText="+5%"
+          badgeVariant="success"
         />
-
         <StatCard
-          title="New Clients"
-          value="+3,052"
-          percentage="-14%"
-          isPositive={false}
-          icon={<FaUserPlus size={18} />}
+          title="Revenue"
+          value="$53,000"
+          badgeText="+8%"
+          badgeVariant="success"
         />
-
         <StatCard
-          title="Total Sales"
-          value="$173,000"
-          percentage="+8%"
-          isPositive
-          icon={<FaShoppingCart size={18} />}
+          title="Orders"
+          value="1,200"
+          badgeText="Pending"
+          badgeVariant="warning"
+        />
+        <StatCard
+          title="Issues"
+          value="12"
+          badgeText="High"
+          badgeVariant="error"
         />
       </div>
 
-      <InfoCardsSection />
-
-      <ProjectsOrdersSection />
+      {/* Bottom Section */}
+      <div className="grid md:grid-cols-2 gap-6">
+        <Projects />
+        <RecentActivity />
+      </div>
 
     </div>
   );
