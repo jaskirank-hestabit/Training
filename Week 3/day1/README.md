@@ -1,6 +1,6 @@
 # Week 3 – Advanced Frontend (Next.js + TailwindCSS)
 
-## 📌 Project Overview
+## Project Overview
 
 This project was built as part of **Week 3 – Advanced Frontend Training**.  
 The goal was to build a modern, production-grade multi-page frontend application using:
@@ -14,14 +14,14 @@ This project includes a SaaS-style landing page, authentication pages, and a mul
 
 ---
 
-# 🚀 Tech Stack
+# Tech Stack
 
 - Next.js (App Router)
 - TailwindCSS
 
 ---
 
-# 📸 Screenshots
+# Screenshots
 
 ## Folder Structure
 ![Folder Structure](./screenshots/folder-structure.png)
@@ -67,7 +67,7 @@ These components follow a reusable design system mindset and are used across mul
 
 ---
 
-## 📦 Modular Page Components
+## Modular Page Components
 
 Other folders inside `/components` like:
 
@@ -88,7 +88,7 @@ Atoms → Sections → Pages
 
 ---
 
-# 🌐 Pages Implemented
+# Pages Implemented
 
 - `/` – Landing Page
 - `/about`
