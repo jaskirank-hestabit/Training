@@ -1,30 +1,187 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Week 3 – Advanced Frontend (Next.js + TailwindCSS)
 
-## Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+This project was built as part of **Week 3 – Advanced Frontend Training**.  
+The goal was to build a modern, production-grade multi-page frontend application using:
 
-```bash
-npm run dev
-```
+- Next.js (App Router)
+- TailwindCSS
+- Reusable Component Architecture
+- Responsive Design System
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project includes a SaaS-style landing page, authentication pages, and a multi-page dashboard with nested layouts — all built without a backend.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🚀 Tech Stack
 
-## Learn More
+- Next.js (App Router)
+- TailwindCSS
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Folder Structure
+![Folder Structure](./screenshots/folder-structure.png)
 
-## Deploy on Vercel
+## Landing Page
+![Landing Page](./screenshots/landing-page.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Signup Page
+![Signup Page](./screenshots/signup-page.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Pricing Page
+![Pricing Page](./screenshots/pricing.png)
+
+## Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+## Users
+![Users](./screenshots/users-table.png)
+
+## Profile Page
+![Profile Page](./screenshots/profile-page.png)
+
+
+## Billing page
+![Billing Page](./screenshots/billing-page.png)
+
+
+---
+
+# Components List
+
+## Reusable UI Components (`/components/ui`)
+
+These are the core reusable components built using TailwindCSS and props-based design:
+
+- Button.jsx
+- Input.jsx
+- Card.jsx
+- Modal.jsx
+- Switch.jsx
+
+These components follow a reusable design system mindset and are used across multiple pages.
+
+---
+
+## 📦 Modular Page Components
+
+Other folders inside `/components` like:
+
+- dashboard/
+- billing/
+- landing/
+- profile/
+
+These are not reusable UI components.  
+They are used to split large pages into smaller modules so that:
+
+- Code stays clean and readable
+- Pages are not too long
+- Structure remains scalable
+
+This follows a component composition mindset:
+Atoms → Sections → Pages
+
+---
+
+# 🌐 Pages Implemented
+
+- `/` – Landing Page
+- `/about`
+- `/pricing`
+- `/login`
+- `/signup`
+- `/dashboard`
+- `/dashboard/profile`
+- `/dashboard/users`
+- `/billing`
+
+---
+
+# Lessons Learned
+
+## 1. Next.js Fundamentals
+
+This week helped me understand:
+
+- File-based routing
+- App directory structure (Next.js 15+)
+- Layouts & nested layouts
+- Page navigation using Link and useRouter
+- Difference between Server Components and Client Components ("use client")
+- Image optimization using `next/image`
+- Font optimization using `next/font`
+- Metadata configuration for SEO
+
+I learned how Next.js structures real-world applications using layouts and routing in a clean and scalable way.
+
+---
+
+## 2. TailwindCSS & Design System Thinking
+
+Instead of writing traditional CSS, I learned:
+
+- Utility-first styling
+- Responsive breakpoints (sm, md, lg, xl)
+- Flexbox and Grid using Tailwind
+- Spacing systems (p-x, m-x, gap-x)
+- Typography scaling
+- Custom theme configuration in `tailwind.config.js`
+
+This helped me build consistent UI quickly without writing custom CSS files.
+
+---
+
+## 3. Component Architecture & UI Thinking
+
+One of the biggest lessons was thinking in components:
+
+- Building reusable UI elements
+- Passing props for flexibility
+- Designing a small UI library in `/components/ui`
+- Separating reusable components from page-level modules
+
+This improved code reusability and maintainability.
+
+---
+
+## 4. Multi-Page Frontend Architecture
+
+Through the exercises, I learned:
+
+- How to structure `/app` and `/components`
+- How to create shared layouts
+- How nested routing works
+- How to build a multi-page frontend without backend
+
+This felt closer to how real SaaS dashboards are structured.
+
+---
+
+## 5. Production Mindset
+
+By the end of Week 3, I understood:
+
+- How to build a full UI system from scratch
+- How to replicate a SaaS landing page
+- How to optimize images and improve performance
+- How to structure a scalable frontend project
+
+---
+
+# Final Outcome
+
+A complete multi-page frontend application built with:
+
+- Clean folder architecture
+- Reusable component system
+- Responsive UI
+- Optimized images
+- Structured routing with Next.js App Router
+
+This project represents my understanding of advanced frontend development using Next.js and TailwindCSS.
+

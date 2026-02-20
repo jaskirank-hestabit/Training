@@ -1,31 +1,20 @@
 import Link from "next/link";
-import { LayoutDashboard, User, CreditCard } from "lucide-react";
+import { LayoutDashboard, User, CreditCard, FileText } from "lucide-react";
 
 export default function Sidebar() {
   return (
     <aside className="w-72 bg-white shadow-md p-6">
-      <h2 className="text-lg font-bold text-teal-500 mb-6">
-        Velora
-      </h2>
+      <Link href="/" className="inline-block mb-6">
+        <h1 className="text-lg font-bold text-teal-500 hover:opacity-80 transition cursor-pointer">
+          Velora
+        </h1>
+      </Link>
 
       <nav className="flex flex-col gap-2 text-sm">
-        <NavItem
-          href="/dashboard"
-          icon={LayoutDashboard}
-          label="Dashboard"
-        />
-
-        <NavItem
-          href="/dashboard/profile"
-          icon={User}
-          label="Profile"
-        />
-
-        <NavItem
-          href="/about"
-          icon={CreditCard}
-          label="About"
-        />
+        <NavItem href="/dashboard" icon={LayoutDashboard} label="Dashboard" />
+        <NavItem href="/dashboard/profile" icon={User} label="Profile" />
+        <NavItem href="/dashboard/users" icon={User} label="Users" />
+        <NavItem href="/billing" icon={FileText} label="Billing" />
       </nav>
     </aside>
   );

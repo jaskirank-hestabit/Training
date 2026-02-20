@@ -17,3 +17,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes growUp {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--target-height);
+  }
+}
+
+.animate-grow {
+  height: var(--target-height);
+  animation: growUp 1.2s ease-out forwards;
+}
+

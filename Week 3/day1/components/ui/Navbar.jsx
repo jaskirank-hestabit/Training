@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Search, User, Settings, Bell } from "lucide-react";
 
 export default function Navbar() {
@@ -20,10 +21,14 @@ export default function Navbar() {
         </div>
 
         {/* Sign In */}
-        <div className="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-black">
-          <User size={16} />
-          <span>Sign In</span>
-        </div>
+        <Link
+  href="/signup"
+  className="flex items-center gap-2 text-sm text-gray-600 hover:text-black transition"
+>
+  <User size={16} />
+  <span>Sign Up</span>
+</Link>
+
 
         {/* Settings */}
         <Settings size={18} className="text-gray-600 cursor-pointer hover:text-black" />
