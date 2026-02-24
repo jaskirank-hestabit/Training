@@ -7,3 +7,6 @@ Week 1/day5/logs/
 
 # Dependencies
 node_modules/
+
+# Environment files (Week 4)
+Week 4/day1/.env*

@@ -1,0 +1,21 @@
+const winston = require("winston");
+const config = require("../config");
+const path = require("path");
+
+const logger = winston.createLogger({
+  level: config.logLevel,
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.printf(({ level, message, timestamp }) => {
+      return `${timestamp} [${level.toUpperCase()}] ${message}`;
+    })
+  ),
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({
+      filename: path.join("src/logs/app.log"),
+    }),
+  ],
+});
+
+module.exports = logger;
