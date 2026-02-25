@@ -4,6 +4,7 @@ const logger = require("../utils/logger");
 const requestLogger = require("../middlewares/requestLogger");
 const requestTimer = require("../middlewares/requestTimer");
 const routes = require("../routes");
+const errorMiddleware = require("../middlewares/error.middleware");
 
 function createApp() {
   const app = express();
@@ -17,12 +18,14 @@ function createApp() {
   // Custom middlewares
   app.use(requestLogger);
   app.use(requestTimer);
-
+  
   logger.info("Middlewares loaded");
-
+  
   app.use("/api", routes);
 
-  logger.info("Routes mounted: 2 endpoints");
+  app.use(errorMiddleware);
+
+  logger.info("Routes mounted: 3 endpoints");
 
   return app;
 }
