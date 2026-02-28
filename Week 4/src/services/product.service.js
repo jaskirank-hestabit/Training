@@ -71,21 +71,24 @@ class ProductService {
     };
   }
 
+  async deleteProduct(id) {
+    // Validate ID format first
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new AppError("Invalid product ID", "INVALID_ID", 400);
+    }
 
-async deleteProduct(id) {
-  // Validate ID format first
-  if (!mongoose.Types.ObjectId.isValid(id)) {
-    throw new AppError("Invalid product ID", "INVALID_ID", 400);
+    const product = await productRepository.findById(id);
+
+    if (!product) {
+      throw new AppError("Product not found", "PRODUCT_NOT_FOUND", 404);
+    }
+
+    return productRepository.softDelete(id);
   }
 
-  const product = await productRepository.findById(id);
-
-  if (!product) {
-    throw new AppError("Product not found", "PRODUCT_NOT_FOUND", 404);
+  async createProduct(data) {
+    return productRepository.create(data);
   }
-
-  return productRepository.softDelete(id);
-}
 }
 
 module.exports = new ProductService();

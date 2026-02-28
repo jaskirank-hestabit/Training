@@ -19,3 +19,15 @@ exports.deleteProduct = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.createProduct = async (req, res, next) => {
+  try {
+    const product = await productService.createProduct(req.body);
+    res.status(201).json({
+      success: true,
+      data: product,
+    });
+  } catch (error) {
+    next(error);
+  }
+};

@@ -18,6 +18,10 @@ class ProductRepository {
     return Product.findById(id);
   }
 
+  async create(data) {
+    return Product.create(data);
+  }
+  
   async softDelete(id) {
     return Product.findByIdAndUpdate(id, {
       deletedAt: new Date(),

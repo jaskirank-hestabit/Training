@@ -5,15 +5,14 @@ const requestLogger = require("../middlewares/requestLogger");
 const requestTimer = require("../middlewares/requestTimer");
 const routes = require("../routes");
 const errorMiddleware = require("../middlewares/error.middleware");
+const securityMiddleware = require("../middlewares/security");
 
 function createApp() {
   const app = express();
 
   logger.info("Initializing Express...");
 
-  // Built-in middlewares
-  app.use(express.json());
-  app.use(cors());
+  securityMiddleware(app);
 
   // Custom middlewares
   app.use(requestLogger);
