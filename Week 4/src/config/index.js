@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 
 const env = process.env.NODE_ENV || "local";
+REDIS_URL: process.env.REDIS_URL || "redis://127.0.0.1:6379";
 
 const envFile = {
   local: ".env.local",

@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+const accountRoutes = require("./account.routes");
 const productRoutes = require("./product.routes");
 
 // Dev-only routes
@@ -17,6 +18,9 @@ router.get("/health", (req, res) => {
 router.get("/ping", (req, res) => {
   res.json({ message: "pong" });
 });
+
+// Account routes 
+router.use("/accounts", accountRoutes);
 
 // Product routes
 router.use("/products", productRoutes);

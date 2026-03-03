@@ -4,7 +4,7 @@ const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const sanitizeMiddleware = require("./sanitize");
 const hpp = require("hpp");
-const xss = require("xss-clean");
+// const xss = require("xss-clean");
 // const mongoSanitize = require("express-mongo-sanitize");
 
 module.exports = function securityMiddleware(app) {
@@ -40,7 +40,7 @@ module.exports = function securityMiddleware(app) {
   //   app.use(mongoSanitize());     // they(mongosanitize, xss) give internal server error instead of validation error
 
   // XSS protection
-    app.use(xss());
+    // app.use(xss());
 
   // Custom NoSQL injection protection
   app.use(sanitizeMiddleware);

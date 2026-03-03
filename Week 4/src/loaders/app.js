@@ -6,17 +6,19 @@ const requestTimer = require("../middlewares/requestTimer");
 const routes = require("../routes");
 const errorMiddleware = require("../middlewares/error.middleware");
 const securityMiddleware = require("../middlewares/security");
+const tracingMiddleware = require("../utils/tracing");
 
 function createApp() {
   const app = express();
-
+  
   logger.info("Initializing Express...");
-
+  
   securityMiddleware(app);
-
+  
   // Custom middlewares
   app.use(requestLogger);
   app.use(requestTimer);
+  app.use(tracingMiddleware);
   
   logger.info("Middlewares loaded");
   
