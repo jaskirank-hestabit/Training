@@ -4,17 +4,17 @@ FROM node:20-alpine
 # Create working directory inside container
 WORKDIR /app
 
-# Copy package files
+# Copy package files first (for Docker layer caching)
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci --only=production
 
-# Copy rest of code
+# Copy rest of the application code
 COPY . .
 
-# Expose port
+# Expose server port
 EXPOSE 5000
 
-# Start server
+# Start the Node server
 CMD ["node", "server.js"]
