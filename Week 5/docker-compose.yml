@@ -7,11 +7,19 @@ services:
     volumes:
       - mongo-data:/data/db
 
-  server:
+  server1:
     build: ./server
-    container_name: node-server
-    ports:
-      - "5000:5000"
+    container_name: node-server-1
+    depends_on:
+      - mongo
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server:/app
+
+  server2:
+    build: ./server
+    container_name: node-server-2
     depends_on:
       - mongo
     env_file:
@@ -25,9 +33,21 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - server
+      - server1
+      - server2
     volumes:
       - ./client:/app
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - server1
+      - server2
 
 volumes:
   mongo-data:

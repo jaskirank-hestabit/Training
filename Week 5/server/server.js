@@ -23,8 +23,8 @@ mongoose
     console.error("MongoDB connection error:", err);
   });
 
-app.get("/", (req, res) => {
-  res.send("Docker + MongoDB Running");
+app.get("/api", (req, res) => {
+  res.send(`Response from container ${process.env.HOSTNAME}`);
 });
 
 app.listen(PORT, () => {
