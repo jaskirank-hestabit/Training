@@ -60,14 +60,18 @@ searchInput.addEventListener("input", () => {
   renderProducts(filtered);
 });
 
-// Sort High → Low
+// Sorting
 sortSelect.addEventListener("change", () => {
+  let sorted = [...allProducts];
+
   if (sortSelect.value === "high") {
-    const sorted = [...allProducts].sort((a, b) => b.price - a.price);
-    renderProducts(sorted);
-  } else {
-    renderProducts(allProducts);
+    sorted.sort((a, b) => b.price - a.price);
+  } 
+  else if (sortSelect.value === "low") {
+    sorted.sort((a, b) => a.price - b.price);
   }
+
+  renderProducts(sorted);
 });
 
 fetchProducts();
