@@ -1,0 +1,32 @@
+services:
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    volumes:
+      - mongo-data:/data/db
+
+  server:
+    build: ../day1
+    container_name: node-server
+    depends_on:
+      - mongo
+    env_file:
+      - ../day1/.env
+    volumes:
+      - ../day1:/app
+    ports:
+      - "5000:5000"
+
+  client:
+    build:
+      context: ./client
+      args:
+        ENV_FILE: .env.dev
+    container_name: react-client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+
+volumes:
+  mongo-data:

@@ -6,8 +6,8 @@ function App() {
 
   useEffect(() => {
   fetch(process.env.REACT_APP_BACKEND_URL)
-    .then((res) => res.text())
-    .then((data) => setMessage(data))
+    .then((res) => res.json())
+    .then((data) => setMessage(data.message))
     .catch(() => setMessage("Server not reachable"));
 }, []);
 

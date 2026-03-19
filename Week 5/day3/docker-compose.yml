@@ -1,0 +1,40 @@
+services:
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    volumes:
+      - mongo-data:/data/db
+
+  server1:
+    build: ../day1
+    container_name: node-server-1
+    depends_on:
+      - mongo
+    env_file:
+      - ../day1/.env
+    volumes:
+      - ../day1:/app
+
+  server2:
+    build: ../day1
+    container_name: node-server-2
+    depends_on:
+      - mongo
+    env_file:
+      - ../day1/.env
+    volumes:
+      - ../day1:/app
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - server1
+      - server2
+
+volumes:
+  mongo-data:

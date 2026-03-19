@@ -307,3 +307,17 @@
 {"level":"info","message":"Incoming Request: DELETE /api/accounts/699d9126a8499d4e7dbdb3c6","timestamp":"2026-03-16T07:45:27.954Z"}
 {"level":"info","message":"Incoming Request: GET /api/products","timestamp":"2026-03-16T07:47:55.513Z"}
 {"level":"info","message":"Shutting down...","timestamp":"2026-03-16T07:49:25.542Z"}
+{"level":"info","message":"Booting in DEV mode","timestamp":"2026-03-16T14:12:42.346Z"}
+{"level":"info","message":"Connecting to database...","timestamp":"2026-03-16T14:12:42.348Z"}
+{"level":"info","message":"Database connected","timestamp":"2026-03-16T14:12:42.412Z"}
+{"level":"info","message":"Initializing Express...","timestamp":"2026-03-16T14:12:42.413Z"}
+{"level":"info","message":"Middlewares loaded","timestamp":"2026-03-16T14:12:42.417Z"}
+{"level":"info","message":"Routes mounted: 3 endpoints","timestamp":"2026-03-16T14:12:42.417Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2026-03-16T14:12:42.420Z"}
+{"level":"info","message":"Incoming Request: GET /api/products","timestamp":"2026-03-16T14:15:09.527Z"}
+{"level":"info","message":"Incoming Request: DELETE /api/products/699ed702cb5b8b3831703452","timestamp":"2026-03-16T14:16:20.786Z"}
+{"level":"info","message":"Incoming Request: GET /api/products","timestamp":"2026-03-16T14:16:38.244Z"}
+{"level":"info","message":"Incoming Request: POST /api/products","timestamp":"2026-03-16T14:17:01.884Z"}
+{"level":"info","message":"Incoming Request: GET /api/products","timestamp":"2026-03-16T14:17:08.466Z"}
+{"level":"info","message":"Incoming Request: GET /api/products?page=1&limit=1","timestamp":"2026-03-16T14:18:56.888Z"}
+{"level":"info","message":"Shutting down...","timestamp":"2026-03-17T06:03:56.548Z"}

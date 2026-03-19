@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const os = require("os");
 
 const app = express();
 
@@ -23,8 +24,18 @@ mongoose
     console.error("MongoDB connection error:", err);
   });
 
+// ── /api — returns JSON so the frontend can display container info ──
 app.get("/api", (req, res) => {
-  res.send(`Response from container ${process.env.HOSTNAME}`);
+  res.json({
+    message:     `Response from container ${process.env.HOSTNAME}`,
+    hostname:    os.hostname(),
+    pid:         process.pid,
+    platform:    os.platform(),
+    arch:        os.arch(),
+    nodeVersion: process.version,
+    uptime:      `${Math.floor(os.uptime())}s`,
+    memoryUsage: process.memoryUsage(),
+  });
 });
 
 app.get("/health", (req, res) => {

@@ -23,7 +23,7 @@ export default function HeroSection() {
             <Button size="lg">Get Started</Button>
           </Link>
           <Link href="/dashboard">
-            <Button variant="secondary" size="lg">
+            <Button variant="secondary"  size="lg">
               View Dashboard
             </Button>
           </Link>

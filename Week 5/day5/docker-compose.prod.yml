@@ -15,7 +15,7 @@ services:
         max-file: "3"
 
   server1:
-    build: ./server
+    build: ../day1
     restart: always
     env_file:
       - .env
@@ -37,7 +37,7 @@ services:
         max-file: "3"
 
   server2:
-    build: ./server
+    build: ../day1
     restart: always
     env_file:
       - .env
@@ -59,10 +59,14 @@ services:
         max-file: "3"
 
   client:
-    build: ./client
+    build:
+      context: ./client       
+      args:
+        ENV_FILE: .env.prod
     restart: always
-    env_file:
-      - .env
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
     profiles:
       - prod
 
@@ -80,8 +84,8 @@ services:
       - "8443:443"
 
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/certs:/etc/nginx/certs
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ../day4/certs:/etc/nginx/certs
 
     depends_on:
       - server1
