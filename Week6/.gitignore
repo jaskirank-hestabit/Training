@@ -1,4 +1,4 @@
-    # Python
+# Python
 __pycache__/
 *.pyc
 
@@ -13,3 +13,6 @@ logs/
 
 # OS
 .DS_Store
+
+prediction_logs.csv
+*.pkl
