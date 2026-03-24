@@ -29,9 +29,7 @@ MODEL_PATH = "src/models/best_model.pkl"
 METRICS_PATH = "src/evaluation/metrics.json"
 
 
-# -------------------------
 # Load datasets
-# -------------------------
 def load_data():
 
     X_train = pd.read_csv(DATA_PATH + "X_train.csv")
@@ -40,16 +38,13 @@ def load_data():
     y_train = pd.read_csv(DATA_PATH + "y_train.csv").values.ravel()
     y_test = pd.read_csv(DATA_PATH + "y_test.csv").values.ravel()
 
-    # Fix: convert scaled labels back to binary
     y_train = (y_train > 0).astype(int)
     y_test = (y_test > 0).astype(int)
 
     return X_train, X_test, y_train, y_test
 
 
-# -------------------------
 # Define models
-# -------------------------
 def get_models():
 
     models = {
@@ -75,9 +70,7 @@ def get_models():
     return models
 
 
-# -------------------------
 # Cross Validation
-# -------------------------
 def cross_validate_models(models, X_train, y_train):
 
     cv_results = {}
@@ -99,9 +92,7 @@ def cross_validate_models(models, X_train, y_train):
     return cv_results
 
 
-# -------------------------
 # Train + Evaluate
-# -------------------------
 def evaluate_models(models, X_train, X_test, y_train, y_test):
 
     results = {}
@@ -134,9 +125,7 @@ def evaluate_models(models, X_train, X_test, y_train, y_test):
     return results
 
 
-# -------------------------
 # Select best model
-# -------------------------
 def select_best_model(results):
 
     best_model_name = None
@@ -156,9 +145,7 @@ def select_best_model(results):
     return best_model_name
 
 
-# -------------------------
 # Save best model
-# -------------------------
 def save_model(model):
 
     Path("src/models").mkdir(parents=True, exist_ok=True)
@@ -168,9 +155,7 @@ def save_model(model):
     print("Best model saved.")
 
 
-# -------------------------
 # Save metrics
-# -------------------------
 def save_metrics(results):
 
     metrics_dict = {}
@@ -187,9 +172,7 @@ def save_metrics(results):
     print("Metrics saved.")
 
 
-# -------------------------
 # Plot confusion matrix
-# -------------------------
 def plot_confusion_matrix(model, X_test, y_test):
 
     preds = model.predict(X_test)
@@ -207,9 +190,7 @@ def plot_confusion_matrix(model, X_test, y_test):
     print("Confusion matrix saved.")
 
 
-# -------------------------
 # MAIN
-# -------------------------
 def main():
 
     X_train, X_test, y_train, y_test = load_data()

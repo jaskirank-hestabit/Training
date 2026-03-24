@@ -80,9 +80,8 @@ def preprocess_input(data):
 
     return df
 
-# -------------------------
+
 # Logging
-# -------------------------
 def log_prediction(request_id, input_data, prediction, confidence):
 
     log_entry = {
@@ -101,9 +100,8 @@ def log_prediction(request_id, input_data, prediction, confidence):
         df.to_csv(LOG_PATH, mode="a", header=False, index=False)
 
 
-# -------------------------
+
 # API endpoint
-# -------------------------
 @app.post("/predict")
 def predict(passenger: Passenger):
 

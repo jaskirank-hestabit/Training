@@ -3,7 +3,7 @@ import requests
 
 API_URL = "http://127.0.0.1:8000/predict"
 
-st.title("🚢 Titanic Survival Prediction")
+st.title("Titanic Survival Prediction")
 
 st.write("Enter passenger details:")
 
@@ -44,9 +44,9 @@ if st.button("Predict"):
             prediction = result["prediction"]
 
             if prediction == 1:
-                st.success(f"✅ Survived")
+                st.success(f"Survived")
             else:
-                st.error(f"❌ Did Not Survive")
+                st.error(f"Did Not Survive")
 
             st.write("Request ID:", result["request_id"])
 

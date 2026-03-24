@@ -12,9 +12,7 @@ RESULT_PATH = "src/tuning/results.json"
 MODEL_PATH = "src/models/tuned_model.pkl"
 
 
-# -------------------------
 # Load datasets
-# -------------------------
 def load_data():
 
     X_train = pd.read_csv(DATA_PATH + "X_train.csv")
@@ -25,9 +23,7 @@ def load_data():
     return X_train, y_train
 
 
-# -------------------------
 # Optuna objective
-# -------------------------
 def objective(trial):
 
     X_train, y_train = load_data()
@@ -66,9 +62,7 @@ def objective(trial):
     return score
 
 
-# -------------------------
 # Run tuning
-# -------------------------
 def run_optimization():
 
     study = optuna.create_study(direction="maximize")
@@ -80,9 +74,7 @@ def run_optimization():
     return study
 
 
-# -------------------------
 # Train tuned model
-# -------------------------
 def train_best_model(best_params):
 
     X_train, y_train = load_data()
@@ -104,9 +96,7 @@ def train_best_model(best_params):
     return model
 
 
-# -------------------------
 # Save results
-# -------------------------
 def save_results(study):
 
     Path("src/tuning").mkdir(parents=True, exist_ok=True)
@@ -122,9 +112,7 @@ def save_results(study):
     print("Tuning results saved")
 
 
-# -------------------------
 # MAIN
-# -------------------------
 def main():
 
     study = run_optimization()

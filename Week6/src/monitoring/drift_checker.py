@@ -1,11 +1,10 @@
 import pandas as pd
 import json
 
-# Use final.csv (unscaled) as the reference, not X_train.csv
 TRAIN_PATH = "src/data/processed/final.csv"
 LOG_PATH   = "src/prediction_logs.csv"
 
-# Drift threshold — tweak per feature as needed
+# Drift threshold 
 THRESHOLDS = {
     "Pclass": 0.3,
     "Age":    5.0,
@@ -43,7 +42,7 @@ def check_drift(train, logs):
         prod_mean  = inputs[col].mean()
         diff       = abs(train_mean - prod_mean)
         threshold  = THRESHOLDS.get(col, DEFAULT_THRESHOLD)
-        status     = "⚠️  DRIFT" if diff > threshold else "✅  OK"
+        status     = "DRIFT" if diff > threshold else "OK"
 
         if diff > threshold:
             any_drift = True
@@ -55,9 +54,9 @@ def check_drift(train, logs):
 
     print()
     if any_drift:
-        print("⚠️  Drift detected — consider retraining the model.")
+        print("Drift detected — consider retraining the model.")
     else:
-        print("✅  No significant drift detected.")
+        print("No significant drift detected.")
 
 
 def main():
