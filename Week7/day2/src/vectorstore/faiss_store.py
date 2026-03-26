@@ -18,8 +18,8 @@ class FAISSStore:
         Add embeddings + chunks to the index.
 
         chunks can be:
-          - list of dicts: {"text": "...", "metadata": {...}}  ← new format
-          - list of plain strings                              ← old format (still works)
+          - list of dicts: {"text": "...", "metadata": {...}}  - new format
+          - list of plain strings                              - old format (still works)
         """
         vectors = np.array(embeddings).astype("float32")
         self.index.add(vectors)

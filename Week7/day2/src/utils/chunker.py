@@ -1,10 +1,8 @@
+MIN_WORDS = 40   # anything smaller is likely a PDF artifact
+
+
 def chunk_text(text, source="unknown", doc_type="unknown",
                chunk_size=500, overlap=100):
-    """
-    For plain text files: txt, md, csv, docx.
-    Estimates page number — acceptable for these types since
-    they don't have real page boundaries anyway.
-    """
     words = text.split()
     chunks = []
     chunk_index = 0
@@ -13,10 +11,9 @@ def chunk_text(text, source="unknown", doc_type="unknown",
         chunk_words = words[i: i + chunk_size]
         chunk_str = " ".join(chunk_words)
 
-        if not chunk_str.strip():
+        if len(chunk_words) < MIN_WORDS:   # skip tiny fragments
             continue
 
-        # Estimate page number - fine for non-PDF files
         estimated_page = (i // 300) + 1
 
         chunks.append({
@@ -42,10 +39,9 @@ def chunk_pdf_pages(pages, source="unknown", chunk_size=500, overlap=100):
     for page_num, page_text in pages:
         words = page_text.split()
 
-        if not words:
+        if len(words) < MIN_WORDS:         # skip near-empty pages
             continue
 
-        # Short page - keep it as one chunk
         if len(words) <= chunk_size:
             all_chunks.append({
                 "text": " ".join(words),
@@ -53,7 +49,7 @@ def chunk_pdf_pages(pages, source="unknown", chunk_size=500, overlap=100):
                     "source": source,
                     "doc_type": "pdf",
                     "chunk_index": chunk_index,
-                    "page_number": page_num,        # REAL page number from PDF
+                    "page_number": page_num,
                     "word_count": len(words),
                     "tags": ["pdf", source.replace(".", "_")],
                 }
@@ -61,13 +57,11 @@ def chunk_pdf_pages(pages, source="unknown", chunk_size=500, overlap=100):
             chunk_index += 1
             continue
 
-        # Long page - split into overlapping sub-chunks
-        # All sub-chunks still carry the same real page_number
         for i in range(0, len(words), chunk_size - overlap):
             chunk_words = words[i: i + chunk_size]
             chunk_str = " ".join(chunk_words)
 
-            if not chunk_str.strip():
+            if len(chunk_words) < MIN_WORDS:   # skip trailing tiny fragments
                 continue
 
             all_chunks.append({
@@ -76,7 +70,7 @@ def chunk_pdf_pages(pages, source="unknown", chunk_size=500, overlap=100):
                     "source": source,
                     "doc_type": "pdf",
                     "chunk_index": chunk_index,
-                    "page_number": page_num,        # REAL page number from PDF
+                    "page_number": page_num,
                     "word_count": len(chunk_words),
                     "tags": ["pdf", source.replace(".", "_")],
                 }

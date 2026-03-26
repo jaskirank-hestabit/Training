@@ -1,0 +1,21 @@
+embedding:
+  model_name: all-MiniLM-L6-v2
+  device: cpu
+
+llm:
+  provider: local
+  model_name: microsoft/phi-2
+  max_new_tokens: 80
+
+chunking:
+  chunk_size: 500
+  overlap: 100
+
+limits:
+  max_file_size_chars: 400000
+  max_chunks_per_file: 200      # lesser chunks cuts off later pages
+  max_total_chunks: 1000
+
+retrieval:
+  top_k: 5
+  min_rerank_score: 0.35        # below this score tell the answer is "not found"

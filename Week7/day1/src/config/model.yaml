@@ -1,3 +1,33 @@
-provider: openai
-model_name: text-embedding-3-small
-api_key_env: OPENAI_API_KEY
+# HYBRID APPROACH:
+#   embeddings - always LOCAL (sentence-transformers, free, no limits)
+#   llm        - API
+
+# Embedding model — LOCAL, free, runs on CPU, no API key needed
+embedding:
+  # model_name: text-embedding-3-small
+  model_name: all-MiniLM-L6-v2
+  device: cpu                      
+
+# LLM for generation — THE PROVIDER SWITCH
+# Change provider here. Nothing else in the codebase changes.
+llm:
+  # provider: openai
+  # api_key_env: OPENAI_API
+  provider: anthropic           
+  model_name: claude-haiku-4-5-20251001
+  api_key_env: ANTHROPIC_API_KEY
+
+# Chunking
+chunking:
+  chunk_size: 500        # tokens per chunk
+  overlap: 100           # overlap between chunks
+
+# Safety limits (prevents rate limit / memory crashes)
+limits:
+  max_file_size_chars: 400000
+  max_chunks_per_file: 50
+  max_total_chunks: 500
+
+# Retrieval
+retrieval:
+  top_k: 5
