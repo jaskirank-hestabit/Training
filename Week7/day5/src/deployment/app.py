@@ -33,12 +33,27 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Session-state init ───────────────────────────────────────────────────
+# Always reload memory from disk so it survives page refreshes
+from src.memory.memory_store import MemoryStore
 if "memory" not in st.session_state:
-    from src.memory.memory_store import MemoryStore
-    st.session_state.memory = MemoryStore(max_turns=5)
+    st.session_state.memory = MemoryStore(max_turns=5, log_path="src/logs/chat_logs.json")
+else:
+    st.session_state.memory._load_existing()
 
 if "chat_history" not in st.session_state:
-    st.session_state.chat_history = []          # [{query, answer, timestamp}]
+    # Rebuild chat_history display list from persisted memory
+    st.session_state.chat_history = []
+    msgs = st.session_state.memory.get_messages()
+    # Pair up user+assistant turns
+    for i in range(0, len(msgs) - 1, 2):
+        u = msgs[i]
+        a = msgs[i + 1] if i + 1 < len(msgs) else {"content": ""}
+        if u["role"] == "user":
+            st.session_state.chat_history.append({
+                "query":     u["content"],
+                "answer":    a["content"],
+                "timestamp": u.get("timestamp", "")[:19].replace("T", " "),
+            })
 
 if "temp_store" not in st.session_state:
     st.session_state.temp_store = None          # in-memory FAISSStore for uploads
@@ -55,8 +70,8 @@ def _db_ok():     return os.path.exists("src/data/raw/sample.db")
 
 # ── Sidebar ──────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.title("🧠 Enterprise KIS")
-    st.caption("Knowledge Intelligence System — Day 5 Capstone")
+    st.title("CAPSTONE")
+    st.caption("Day 5 - Advanced RAG")
     st.divider()
 
     st.subheader("📊 System Status")
@@ -67,11 +82,13 @@ with st.sidebar:
     st.divider()
     st.subheader("💭 Memory")
     st.caption(f"Turns stored: {len(st.session_state.chat_history)}/5")
+    st.caption("→ See **Memory** tab for full history")
 
-    if st.button("🗑️ Clear Conversation Memory"):
+    if st.button("🗑️ Clear Memory"):
         st.session_state.memory.clear()
         st.session_state.chat_history = []
         st.success("Memory cleared!")
+        st.rerun()
 
     if st.session_state.temp_store:
         if st.button("🔄 Drop Uploaded File (use main index)"):
@@ -79,25 +96,24 @@ with st.sidebar:
             st.success("Switched back to main index.")
 
     st.divider()
-    st.caption("**Run order:**\n1. `init_db.py`\n2. `ingest.py`\n3. `image_ingest.py`\n4. `streamlit run deployment/app.py`")
 
 
 # ── Tabs ─────────────────────────────────────────────────────────────────
-tab1, tab2, tab3 = st.tabs(["📄  Text RAG", "🖼️  Image RAG", "🗄️  SQL RAG"])
+tab1, tab2, tab3, tab4 = st.tabs(["📄  Text RAG", "🖼️  Image RAG", "🗄️  SQL RAG", "💭  Memory"])
 
 
 # ═══════════════════════════════════════════════════════════════════════
 #  TAB 1  ——  TEXT RAG
 # ═══════════════════════════════════════════════════════════════════════
 with tab1:
-    st.header("📄 Document Question Answering")
+    st.header("Document Question Answering")
     st.caption("Ask questions from internal documents — upload a file or use the pre-ingested index.")
 
     left, right = st.columns([1, 1.6], gap="large")
 
     with left:
         # ── File upload ──
-        st.subheader("📁 Document Source")
+        st.subheader("Document Source")
         uploaded_file = st.file_uploader(
             "Upload (optional — overrides main index for this session)",
             type=["pdf", "txt", "md", "docx", "csv"],
@@ -124,27 +140,27 @@ with tab1:
             if not _index_ok():
                 st.warning("⚠️ No main index found. Upload a file or run `ingest.py`.")
             else:
-                source_label = ("📂 Using **uploaded file** (in-memory)"
+                source_label = ("Using **uploaded file** (in-memory)"
                                 if st.session_state.temp_store
-                                else "📚 Using **main document index**")
+                                else "Using **main document index**")
                 st.success(source_label)
 
         st.divider()
 
         # ── Query ──
-        st.subheader("🔍 Ask a Question")
+        st.subheader("Ask a Question")
         user_query = st.text_area("Your question:", height=120,
                                   placeholder="e.g. What is the process for credit underwriting?")
 
-        with st.expander("⚙️ Advanced Options"):
+        with st.expander("Advanced Options"):
             use_memory    = st.checkbox("Include conversation memory in prompt", value=True)
             use_refine    = st.checkbox("Self-refinement loop (slower but more accurate)", value=False)
             filter_choice = st.selectbox("Filter by doc type", ["— none —","pdf","txt","md","docx","csv"])
 
-        ask_btn = st.button("🔎 Ask", type="primary", use_container_width=True)
+        ask_btn = st.button("Ask", type="primary", use_container_width=True)
 
     with right:
-        st.subheader("💬 Answer")
+        st.subheader("Answer")
 
         if ask_btn:
             if not user_query.strip():
@@ -161,7 +177,7 @@ with tab1:
                         from src.evaluation.rag_eval import evaluate_rag_response
                         from src.generator.llm_client import generate_answer
 
-                        mem_ctx = (st.session_state.memory.get_history_text()
+                        mem_ctx = (st.session_state.memory.get_history_text(rag_type="text")
                                    if use_memory else "")
 
                         result = run_rag(
@@ -191,12 +207,19 @@ with tab1:
 
                         # ── Update memory ──
                         if use_memory:
-                            st.session_state.memory.add("user", user_query)
-                            st.session_state.memory.add("assistant", answer)
+                            st.session_state.memory.add(
+                                "user", user_query, rag_type="text",
+                                extra={"query": user_query}
+                            )
+                            st.session_state.memory.add(
+                                "assistant", answer, rag_type="text",
+                                extra={"answer": answer}
+                            )
                             st.session_state.chat_history.append({
                                 "query":     user_query,
                                 "answer":    answer,
                                 "timestamp": datetime.now().strftime("%H:%M:%S"),
+                                "rag_type":  "text",
                             })
 
                         # ── Display ──
@@ -204,15 +227,32 @@ with tab1:
                         st.divider()
 
                         # metrics row
-                        c1, c2, c3, c4 = st.columns(4)
-                        c1.metric("Faithfulness",  f"{eval_r['faithfulness_score']:.2f}")
-                        c2.metric("Confidence",    eval_r["confidence"])
-                        c3.metric("Sources used",  eval_r["num_sources"])
-                        c4.metric("Avg src score", f"{eval_r['avg_source_score']:.2f}")
+                        c1, c2, c3 = st.columns(3)
+                        c1.metric("Faithfulness Score", f"{eval_r['faithfulness_score']:.2f}")
+                        c2.metric("Confidence",         eval_r["confidence"])
+                        c3.metric("Avg Source Score",   f"{eval_r['avg_source_score']:.2f}")
 
+                        # Hallucination detection banner
                         if eval_r["is_potential_hallucination"]:
-                            st.warning("⚠️ Low faithfulness score — answer may not be fully "
-                                       "grounded in the retrieved context. Verify manually.")
+                            st.error(
+                                "**Hallucination Detected** — "
+                                f"Faithfulness score `{eval_r['faithfulness_score']:.2f}` "
+                                "is below threshold `0.35`. "
+                                "The answer may contain information not grounded in the "
+                                "retrieved documents. Please verify manually."
+                            )
+                        elif eval_r["has_disclaimer"]:
+                            st.info(
+                                "**No Hallucination** — "
+                                "The model explicitly stated it could not find the answer "
+                                "in the provided documents."
+                            )
+                        else:
+                            st.success(
+                                f"**No Hallucination Detected** — "
+                                f"Answer is grounded in context "
+                                f"(faithfulness: `{eval_r['faithfulness_score']:.2f}`)."
+                            )
 
                         # sources
                         if result["sources"]:
@@ -235,27 +275,18 @@ with tab1:
                         st.error(f"Pipeline error: {e}")
                         import traceback; st.code(traceback.format_exc())
 
-        # ── Memory panel ──
-        if st.session_state.chat_history:
-            st.divider()
-            st.subheader(f"💭 Conversation Memory ({len(st.session_state.chat_history)} turns)")
-            for msg in reversed(st.session_state.chat_history[-5:]):
-                with st.expander(f"🕐 {msg['timestamp']}  —  {msg['query'][:70]}…"):
-                    st.markdown(f"**Q:** {msg['query']}")
-                    st.markdown(f"**A:** {msg['answer'][:400]}…" if len(msg['answer']) > 400 else f"**A:** {msg['answer']}")
-
 
 # ═══════════════════════════════════════════════════════════════════════
 #  TAB 2  ——  IMAGE RAG
 # ═══════════════════════════════════════════════════════════════════════
 with tab2:
-    st.header("🖼️ Image Retrieval & Analysis")
+    st.header("Image Retrieval & Analysis")
     st.caption("CLIP-powered image search · OCR · Vision LLM answers")
 
     left2, right2 = st.columns([1, 1.6], gap="large")
 
     with left2:
-        st.subheader("🖼️ Image Input")
+        st.subheader("Image Input")
         uploaded_img = st.file_uploader(
             "Upload an image (optional)",
             type=["png", "jpg", "jpeg"],
@@ -294,23 +325,36 @@ with tab2:
 
         st.divider()
 
-        mode = st.radio("🔀 Search Mode:", [
+        mode = st.radio("Search Mode:", [
             "Text → Image  (find images by text description)",
-            "Image → Image (find visually similar images)",
+            "Image → Image — Local Index  (from ingested images)",
+            "Image → Image — Web Search  (any image, internet results)",
             "Image → Text Answer  (vision LLM analyses image)",
         ])
 
         text_q_img = ""
-        if "Text →" in mode or "→ Text" in mode:
-            text_q_img = st.text_input("Text query / question:",
-                                       placeholder="e.g. bar chart showing gender distribution")
+        if "Text → Image" in mode:
+            text_q_img = st.text_input(
+                "Text description to search:",
+                placeholder="e.g. bar chart showing gender distribution",
+            )
+        elif "Web Search" in mode:
+            text_q_img = st.text_input(
+                "Optional search hint (leave blank to auto-describe image):",
+                placeholder="e.g. orange tabby cat sitting on a sofa",
+            )
+        elif "→ Text Answer" in mode:
+            text_q_img = st.text_input(
+                "Question about the image:",
+                placeholder="e.g. What does this chart show?",
+            )
 
         k_img = st.slider("Top-k results:", 1, 8, 3)
         img_btn = st.button("🔍 Search / Analyse", type="primary",
                             use_container_width=True, key="img_btn")
 
     with right2:
-        st.subheader("📊 Results")
+        st.subheader("Results")
 
         if img_btn:
             if not _img_idx_ok() and "→ Text" not in mode:
@@ -318,44 +362,136 @@ with tab2:
             else:
                 with st.spinner("Processing …"):
                     try:
+                        # ── TEXT → IMAGE (web search) ────────────────────────────
                         if "Text → Image" in mode:
                             if not text_q_img.strip():
                                 st.warning("Enter a text description to search.")
                             else:
-                                from src.retriever.image_search import ImageSearcher
-                                searcher = ImageSearcher()
-                                hits = searcher.search_by_text(text_q_img, k=k_img)
-                                st.markdown(f"**{len(hits)} matching image(s):**")
-                                for r in hits:
-                                    p = r["metadata"]["image_path"]
-                                    c1, c2 = st.columns([1, 2])
-                                    with c1:
-                                        if os.path.exists(p):
-                                            st.image(p, use_container_width=True)
-                                        else:
-                                            st.caption(f"(file not found: {p})")
-                                    with c2:
-                                        st.markdown(f"**Score:** {r['score']:.4f}")
-                                        st.markdown(f"**Caption:** {r['metadata']['caption']}")
-                                        st.markdown(f"**OCR:** {r['metadata']['ocr_text'][:120]}")
-                                    st.divider()
+                                cache_key = f"web_hits__text__{text_q_img}__{k_img}"
+                                if cache_key not in st.session_state:
+                                    with st.spinner("Searching the web for matching images …"):
+                                        from src.retriever.web_image_search import (
+                                            search_similar_images_web,
+                                        )
+                                        web_hits, query_used = search_similar_images_web(
+                                            image_path="",        # no image — query is text
+                                            user_hint=text_q_img, # use exactly what user typed
+                                            k=k_img,
+                                        )
+                                        st.session_state[cache_key] = (web_hits, query_used)
+                                else:
+                                    web_hits, query_used = st.session_state[cache_key]
 
-                        elif "Image → Image" in mode:
+                                st.info(f"🔍 Search query used: **{query_used}**")
+
+                                if not web_hits or not web_hits[0]["url"]:
+                                    first_title = web_hits[0]["title"] if web_hits else "Unknown error"
+                                    st.error(
+                                        f"**No images returned.**\n\n"
+                                        f"Reason: `{first_title}`\n\n"
+                                        f"Things to try:\n"
+                                        f"- Make sure `ddgs` is installed: `pip install ddgs`\n"
+                                        f"- Try a shorter / simpler description\n"
+                                        f"- Check your internet connection"
+                                    )
+                                else:
+                                    st.markdown(f"**{len(web_hits)} image(s) found on the web:**")
+                                    rows = [web_hits[i:i+3] for i in range(0, len(web_hits), 3)]
+                                    for row in rows:
+                                        cols = st.columns(len(row))
+                                        for col, hit in zip(cols, row):
+                                            with col:
+                                                try:
+                                                    st.image(
+                                                        hit["thumb"] or hit["url"],
+                                                        use_container_width=True,
+                                                    )
+                                                except Exception:
+                                                    st.caption("(image failed to load)")
+                                                st.caption(
+                                                    f"**{hit['title'][:50]}**\n"
+                                                    f"*{hit['source']}*"
+                                                )
+                                                if hit["url"]:
+                                                    st.markdown(
+                                                        f"[Open full image ↗]({hit['url']})"
+                                                    )
+
+                        # ── IMAGE → IMAGE (local FAISS index) ───────────────────
+                        elif "Local Index" in mode:
                             if not query_img_path:
                                 st.warning("Upload or select an image first.")
                             else:
                                 from src.retriever.image_search import ImageSearcher
                                 searcher = ImageSearcher()
                                 hits = searcher.search_by_image(query_img_path, k=k_img)
-                                st.markdown(f"**{len(hits)} visually similar image(s):**")
+                                st.markdown(f"**{len(hits)} visually similar image(s) from local index:**")
                                 cols = st.columns(min(len(hits), 3))
                                 for i, r in enumerate(hits):
                                     p = r["metadata"]["image_path"]
                                     with cols[i % 3]:
                                         if os.path.exists(p):
                                             st.image(p, use_container_width=True)
-                                        st.caption(f"Score: {r['score']:.4f}\n{r['metadata']['caption'][:60]}")
+                                        st.caption(
+                                            f"Score: {r['score']:.4f}\n"
+                                            f"{r['metadata']['caption'][:60]}"
+                                        )
 
+                        # ── IMAGE → IMAGE (web search — works for ANY image) ─────
+                        elif "Web Search" in mode:
+                            if not query_img_path:
+                                st.warning("Upload or select an image first.")
+                            else:
+                                # Cache key: path + hint + k so we don't re-search on rerun
+                                cache_key = f"web_hits__{query_img_path}__{text_q_img}__{k_img}"
+                                if cache_key not in st.session_state:
+                                    with st.spinner("Describing image and searching the web (up to 15s) …"):
+                                        from src.retriever.image_search import ImageSearcher
+                                        searcher  = ImageSearcher()
+                                        web_hits, query_used = searcher.search_similar_web(
+                                            query_img_path,
+                                            user_hint=text_q_img,
+                                            k=k_img,
+                                        )
+                                        st.session_state[cache_key] = (web_hits, query_used)
+                                else:
+                                    web_hits, query_used = st.session_state[cache_key]
+
+                                st.info(f"🔍 Search query used: **{query_used}**")
+
+                                if not web_hits or not web_hits[0]["url"]:
+                                    st.warning(
+                                        "No web results. Make sure "
+                                        "`duckduckgo-search` is installed:\n"
+                                        "```\npip install duckduckgo-search\n```"
+                                    )
+                                else:
+                                    st.markdown(
+                                        f"**{len(web_hits)} similar image(s) found on the web:**"
+                                    )
+                                    # Show in a responsive grid of 3
+                                    rows = [web_hits[i:i+3] for i in range(0, len(web_hits), 3)]
+                                    for row in rows:
+                                        cols = st.columns(len(row))
+                                        for col, hit in zip(cols, row):
+                                            with col:
+                                                try:
+                                                    st.image(
+                                                        hit["thumb"] or hit["url"],
+                                                        use_container_width=True,
+                                                    )
+                                                except Exception:
+                                                    st.caption("(image failed to load)")
+                                                st.caption(
+                                                    f"**{hit['title'][:50]}**\n"
+                                                    f"*{hit['source']}*"
+                                                )
+                                                if hit["url"]:
+                                                    st.markdown(
+                                                        f"[Open full image ↗]({hit['url']})"
+                                                    )
+
+                        # ── IMAGE → TEXT ANSWER (vision LLM) ────────────────────
                         elif "→ Text Answer" in mode:
                             if not query_img_path:
                                 st.warning("Upload or select an image first.")
@@ -373,20 +509,26 @@ with tab2:
                                 st.markdown("**Vision LLM Answer:**")
                                 st.markdown(answer)
 
-                                # Show CLIP-similar images as supporting evidence
-                                if _img_idx_ok():
-                                    st.divider()
-                                    st.markdown("**Related images from index (CLIP similarity):**")
-                                    from src.retriever.image_search import ImageSearcher
-                                    searcher = ImageSearcher()
-                                    hits = searcher.search_by_image(query_img_path, k=3)
-                                    cols = st.columns(min(len(hits), 3))
-                                    for i, r in enumerate(hits):
-                                        p = r["metadata"]["image_path"]
-                                        with cols[i % 3]:
-                                            if os.path.exists(p):
-                                                st.image(p, use_container_width=True)
-                                            st.caption(f"{r['score']:.4f}")
+                                # ── Log to memory ──
+                                img_label = os.path.basename(query_img_path) if query_img_path else "image"
+                                st.session_state.memory.add(
+                                    "user",
+                                    f"[Image: {img_label}] {question}",
+                                    rag_type="image",
+                                    extra={"query": question, "image": img_label}
+                                )
+                                st.session_state.memory.add(
+                                    "assistant",
+                                    answer,
+                                    rag_type="image",
+                                    extra={"answer": answer}
+                                )
+                                st.session_state.chat_history.append({
+                                    "query":     f"[Image RAG] {img_label}: {question[:60]}",
+                                    "answer":    answer,
+                                    "timestamp": datetime.now().strftime("%H:%M:%S"),
+                                    "rag_type":  "image",
+                                })
 
                     except Exception as e:
                         st.error(f"Error: {e}")
@@ -397,7 +539,7 @@ with tab2:
 #  TAB 3  ——  SQL RAG
 # ═══════════════════════════════════════════════════════════════════════
 with tab3:
-    st.header("🗄️ Natural Language → SQL → Answer")
+    st.header("Natural Language → SQL → Answer")
     st.caption("Write questions in plain English; the system generates SQL, executes it, and summarises the result.")
 
     if not _db_ok():
@@ -408,7 +550,7 @@ with tab3:
 
         with left3:
             # ── Schema ──
-            st.subheader("📐 Database Schema")
+            st.subheader("Database Schema")
             try:
                 from src.utils.schema_loader import load_schema
                 schema_text = load_schema("src/data/raw/sample.db")
@@ -417,7 +559,7 @@ with tab3:
                 st.error(f"Schema error: {e}")
 
             # ── Sample data ──
-            st.subheader("👁️ Sample Data (first 10 rows)")
+            st.subheader("Sample Data (first 10 rows)")
             try:
                 conn   = sqlite3.connect("src/data/raw/sample.db")
                 tables = pd.read_sql(
@@ -434,19 +576,24 @@ with tab3:
             st.divider()
 
             # ── Query input ──
-            st.subheader("❓ Ask in Natural Language")
+            st.subheader("Ask in Natural Language")
             sql_q = st.text_area(
                 "Your question:",
                 height=120,
-                placeholder="e.g. Show total sales by artist for 2023\n"
-                            "e.g. Which artist had the highest sales?\n"
-                            "e.g. How many records are in the sales table?",
+                placeholder=(
+                    "e.g. Show all employees on Line-A\n"
+                    "e.g. Who has the most defects on their line?\n"
+                    "e.g. Show average salary by department\n"
+                    "e.g. Which line has the highest efficiency?\n"
+                    "e.g. List all night shift employees and their product\n"
+                    "e.g. Who joined before 2018?"
+                ),
             )
             sql_btn = st.button("⚡ Generate & Execute SQL",
                                 type="primary", use_container_width=True)
 
         with right3:
-            st.subheader("📊 Results")
+            st.subheader("Results")
 
             if sql_btn:
                 if not sql_q.strip():
@@ -464,33 +611,132 @@ with tab3:
                                     st.code(out["sql"], language="sql")
                             else:
                                 # ── SQL ──
-                                st.subheader("🔧 Generated SQL")
+                                st.subheader("Generated SQL")
                                 st.code(out["sql"], language="sql")
 
                                 # ── Results table ──
-                                st.subheader("📋 Query Results")
+                                st.subheader("Query Results")
                                 if out["result"]:
                                     df_res = pd.DataFrame(out["result"])
                                     st.dataframe(df_res, use_container_width=True)
                                     st.caption(f"Rows returned: **{len(df_res)}**")
-
-                                    # Optional bar chart if there's a numeric column
-                                    num_cols = df_res.select_dtypes("number").columns.tolist()
-                                    cat_cols = df_res.select_dtypes(
-                                        exclude="number").columns.tolist()
-                                    if num_cols and cat_cols:
-                                        with st.expander("📈 Quick Chart"):
-                                            x_col = st.selectbox("X axis:", cat_cols, key="x_col")
-                                            y_col = st.selectbox("Y axis:", num_cols, key="y_col")
-                                            st.bar_chart(
-                                                df_res.set_index(x_col)[y_col])
                                 else:
                                     st.info("Query returned no rows.")
 
                                 # ── LLM summary ──
-                                st.subheader("💬 LLM Summary")
-                                st.markdown(out.get("answer", "_No summary._"))
+                                st.subheader("LLM Summary")
+                                sql_answer = out.get("answer", "_No summary._")
+                                st.markdown(sql_answer)
+
+                                # ── Log to memory ──
+                                st.session_state.memory.add(
+                                    "user",
+                                    sql_q,
+                                    rag_type="sql",
+                                    extra={"query": sql_q}
+                                )
+                                st.session_state.memory.add(
+                                    "assistant",
+                                    sql_answer,
+                                    rag_type="sql",
+                                    extra={"answer": sql_answer, "sql": out["sql"]}
+                                )
+                                st.session_state.chat_history.append({
+                                    "query":     f"[SQL RAG] {sql_q[:80]}",
+                                    "answer":    sql_answer,
+                                    "timestamp": datetime.now().strftime("%H:%M:%S"),
+                                    "rag_type":  "sql",
+                                })
 
                         except Exception as e:
                             st.error(f"Pipeline error: {e}")
                             import traceback; st.code(traceback.format_exc())
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  TAB 4  ——  CONVERSATION MEMORY
+# ═══════════════════════════════════════════════════════════════════════
+with tab4:
+    st.header("Conversation Memory")
+    st.caption("Last 5 turns are stored on disk and survive page refreshes.")
+
+    # ── Stats row ───────────────────────────────────────────────────────
+    total_turns = len(st.session_state.chat_history)
+    log_path    = "src/logs/chat_logs.json"
+    log_exists  = os.path.exists(log_path)
+
+    text_turns  = sum(1 for m in st.session_state.chat_history if m.get("rag_type","text") == "text")
+    image_turns = sum(1 for m in st.session_state.chat_history if m.get("rag_type") == "image")
+    sql_turns   = sum(1 for m in st.session_state.chat_history if m.get("rag_type") == "sql")
+
+    c1, c2, c3, c4, c5 = st.columns(5)
+    c1.metric("Total turns",      total_turns)
+    c2.metric("📄 Text RAG",      text_turns)
+    c3.metric("🖼️ Image RAG",    image_turns)
+    c4.metric("🗄️ SQL RAG",      sql_turns)
+    c5.metric("Log file",         "exists" if log_exists else "❌ not yet")
+
+    st.divider()
+
+    # ── Controls ────────────────────────────────────────────────────────
+    col_a, col_b = st.columns([1, 3])
+
+    with col_a:
+        if st.button("Clear All Memory", type="primary", use_container_width=True):
+            st.session_state.memory.clear()
+            st.session_state.chat_history = []
+            st.success("Memory cleared!")
+            st.rerun()
+
+    # with col_b:
+    #     if log_exists:
+    #         with open(log_path) as f:
+    #             raw_logs = f.read()
+    #         st.download_button(
+    #             label="⬇️ Download CHAT-LOGS.json",
+    #             data=raw_logs,
+    #             file_name="CHAT-LOGS.json",
+    #             mime="application/json",
+    #             use_container_width=True,
+    #         )
+
+    st.divider()
+
+    # ── Conversation display ─────────────────────────────────────────────
+    if not st.session_state.chat_history:
+        st.info(
+            "No conversation history yet. "
+            "Ask a question in the **Text RAG** tab to start building memory."
+        )
+    else:
+        st.subheader(f"Stored Turns ({total_turns})")
+
+        # Show most recent first
+        _TYPE_ICON = {"text": "📄", "image": "🖼️", "sql": "🗄️"}
+
+        for idx, msg in enumerate(reversed(st.session_state.chat_history)):
+            turn_num  = total_turns - idx
+            ts        = msg.get("timestamp", "")
+            rtype     = msg.get("rag_type", "text")
+            icon      = _TYPE_ICON.get(rtype, "📄")
+
+            with st.expander(
+                f"Turn {turn_num}  •  {icon} {rtype.upper()}  •  🕐 {ts}  —  {msg['query'][:70]}…",
+                expanded=(idx == 0),
+            ):
+                st.markdown("**Question:**")
+                st.info(msg["query"])
+
+                st.markdown("**Answer:**")
+                st.success(msg["answer"])
+
+        st.divider()
+
+        # ── Raw JSON viewer ──────────────────────────────────────────────
+        with st.expander("🔍 View raw memory (what gets injected into the LLM prompt)"):
+            raw_history = st.session_state.memory.get_messages()
+            if raw_history:
+                import json
+                st.code(json.dumps(raw_history, indent=2), language="json")
+            else:
+                st.caption("Empty.")
