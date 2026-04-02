@@ -1,0 +1,53 @@
+```gitignore
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Environment variables / secrets
+.env.local
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model files / checkpoints
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Quantized / LLM files
+*.gguf
+*.ggml
+
+# Dataset generated files (optional)
+data/*.csv
+data/*.parquet
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.swp
+```
