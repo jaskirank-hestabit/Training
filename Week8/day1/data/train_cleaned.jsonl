@@ -1,0 +1,900 @@
+{"instruction": "Explain Python programming language", "input": "Example 5", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 241", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 236", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 164", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 386", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 190", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 80", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 271", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 269", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 184", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 98", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 221", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 275", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 11", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 20", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 350", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 157", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 121", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 224", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 263", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 182", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 270", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 90", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 88", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 342", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 10", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 109", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 124", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 61", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 184", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 102", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 111", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 91", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 369", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 252", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 33", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 316", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 147", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 50", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 29", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 193", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 13", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 37", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 176", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 158", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 267", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 3", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 134", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 209", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 106", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 133", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 8", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 319", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 321", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 87", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 183", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 253", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 330", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 239", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 305", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 246", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 281", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 80", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 36", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 268", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 291", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 203", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 292", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 18", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 334", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 329", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 94", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 98", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 74", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 45", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 233", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 59", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 32", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 28", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 227", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 219", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 158", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 79", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 31", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 244", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 210", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 84", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 370", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 38", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 27", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 371", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 281", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 130", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 149", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 95", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 21", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 66", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 5", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 257", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 284", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 127", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 167", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 275", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 130", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 13", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 147", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 229", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 181", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 191", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 105", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 4", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 80", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 203", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 192", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 356", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 326", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 44", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 337", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 275", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 83", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 118", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 62", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 274", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 237", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 223", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 156", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 295", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 220", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 119", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 283", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 25", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 117", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 277", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 228", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 49", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 59", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 264", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 160", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 144", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 157", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 244", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 99", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 37", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 258", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 83", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 102", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 327", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 288", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 7", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 32", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 279", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 235", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 52", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 156", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 168", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 2", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 87", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 122", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 259", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 148", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 106", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 100", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 135", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 254", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 266", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 236", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 7", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 133", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 261", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 210", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 171", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 8", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 133", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 52", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 40", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 396", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 152", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 81", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 190", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 373", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 141", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 247", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 45", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 46", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 116", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 333", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 24", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 39", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 7", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 287", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 311", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 154", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 139", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 156", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 361", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 75", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 252", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 222", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 229", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 165", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 167", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 179", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 38", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 89", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 240", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 290", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 254", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 8", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 43", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 323", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 226", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 161", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 195", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 15", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 269", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 304", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 46", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 175", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 123", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 15", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 145", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 298", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 212", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 208", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 205", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 132", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 109", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 255", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 99", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 33", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 95", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 50", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 248", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 159", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 270", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 353", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 51", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 52", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 54", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 47", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 282", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 75", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 220", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 28", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 90", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 150", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 148", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 268", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 297", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 90", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 218", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 340", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 17", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 196", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 11", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 314", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 181", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 247", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 87", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 292", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 284", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 76", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 20", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 72", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 349", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 114", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 285", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 125", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 195", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 255", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 123", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 374", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 65", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 152", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 204", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 25", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 5", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 187", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 160", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 200", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 251", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 30", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 167", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 193", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 109", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 6", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 194", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 178", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 71", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 182", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 140", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 50", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 136", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 204", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 345", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 170", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 278", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 108", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 85", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 79", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 2", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 140", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 51", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 368", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 11", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 105", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 144", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 37", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 65", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 222", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 285", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 198", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 111", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 172", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 161", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 9", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 68", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 14", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 35", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 110", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 97", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 134", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 66", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 296", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 338", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 79", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 317", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 325", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 259", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 69", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 111", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 88", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 83", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 232", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 283", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 184", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 73", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 197", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 212", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 226", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 375", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 92", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 115", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 262", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 260", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 286", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 57", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 280", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 339", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 62", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 202", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 226", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 141", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 78", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 118", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 76", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 179", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 91", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 22", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 14", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 261", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 162", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 289", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 66", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 164", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 189", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 383", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 122", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 116", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 192", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 291", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 202", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 217", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 56", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 152", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 19", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 160", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 42", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 227", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 27", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 67", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 153", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 146", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 49", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 85", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 58", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 67", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 198", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 132", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 70", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 104", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 137", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 331", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 113", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 211", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 151", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 26", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 234", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 163", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 280", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 28", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 162", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 206", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 58", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 116", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 230", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 135", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 346", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 47", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 292", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 157", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 93", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 179", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 264", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 131", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 237", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 140", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 17", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 213", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 273", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 97", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 171", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 168", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 282", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 250", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 217", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 313", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 260", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 47", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 169", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 110", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 173", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 297", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 128", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 307", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 115", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 154", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 177", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 19", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 197", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 213", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 103", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 204", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 155", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 84", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 143", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 117", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 252", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 112", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 279", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 39", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 170", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 86", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 367", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 231", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 174", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 26", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 49", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 287", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 97", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 27", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 177", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 250", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 61", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 81", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 68", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 44", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 141", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 104", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 119", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 93", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 228", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 206", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 278", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 389", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 77", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 101", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 279", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 38", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 208", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 253", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 12", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 143", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 153", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 251", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 183", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 15", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 22", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 254", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 142", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 149", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 112", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 115", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 185", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 266", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 324", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 175", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 64", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 351", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 240", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 242", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 99", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 231", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 216", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 276", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 41", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 96", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 388", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 150", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 191", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 0", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 154", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 30", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 18", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 188", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 262", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 104", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 276", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 40", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 77", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 258", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 285", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 291", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 267", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 124", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 6", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 282", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 130", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 72", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 232", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 364", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 358", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 63", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 355", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 289", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 82", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 9", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 214", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 207", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 201", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 23", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 352", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 218", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 215", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 354", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 320", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 397", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 101", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 378", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 101", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 187", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 24", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 103", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 29", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 194", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 301", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 205", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 93", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 186", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 59", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 1", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 215", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 175", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 309", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 149", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 172", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 77", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 294", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 165", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 222", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 200", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 207", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 142", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 261", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 78", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 161", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 39", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 277", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 302", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 348", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 214", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 94", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 180", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 208", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 273", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 4", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 126", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 86", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 158", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 256", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 199", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 294", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 139", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 235", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 51", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 365", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 131", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 197", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 78", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 164", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 85", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 299", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 192", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 190", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 185", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 274", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 227", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 42", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 132", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 124", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 105", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 221", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 0", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 165", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 243", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 189", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 265", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 280", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 122", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 95", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 263", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 399", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 138", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 44", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 202", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 199", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 65", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 239", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 43", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 237", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 98", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 393", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 114", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 0", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 48", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 129", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 108", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 203", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 233", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 174", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 63", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 246", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 34", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 201", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 151", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 296", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 209", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 32", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 214", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 70", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 295", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 284", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 163", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 138", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 74", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 29", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 336", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 239", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 58", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 242", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 143", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 236", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 155", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 16", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 16", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 216", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 162", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 147", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 41", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 3", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 298", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 232", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 238", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 273", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 113", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 245", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 376", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 224", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 357", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 380", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 12", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 211", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 347", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 209", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 181", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 146", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 36", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 48", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 263", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 151", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 46", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 84", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 220", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 248", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 230", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 134", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 144", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 215", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 256", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 384", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 21", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 290", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 249", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 288", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 343", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 67", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 118", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 293", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 43", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 62", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 88", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 344", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 277", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 310", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 272", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 57", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 139", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 196", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 60", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 195", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 289", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 295", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 322", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 173", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 186", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 71", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 102", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 163", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 328", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 91", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 166", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 219", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 395", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 225", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 228", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 250", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 25", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 240", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 392", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 385", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 45", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 12", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 117", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 381", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 183", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 258", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 108", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 57", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Explain Python programming language", "input": "Example 178", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 107", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 299", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 219", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 191", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a dictionary?", "input": "Example 40", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 173", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 96", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 200", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 125", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 249", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 169", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 387", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 81", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 2", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 145", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 82", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 372", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 60", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 153", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 155", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 33", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 272", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 145", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 53", "output": "calculate_total"}
+{"instruction": "What is a dictionary?", "input": "Example 359", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 9", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 34", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 20", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 13", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 169", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 35", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 253", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 131", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 3", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 36", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 53", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 201", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 238", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 54", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 136", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 128", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 129", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 303", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 136", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 244", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 217", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 274", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 126", "output": "calculate_total"}
+{"instruction": "Explain Python programming language", "input": "Example 166", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "What is a list in Python?", "input": "Example 298", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 120", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 260", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 100", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Explain Python programming language", "input": "Example 267", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 281", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 245", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 48", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 293", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 238", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 100", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 120", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 177", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 218", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 256", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 114", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 294", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 16", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 123", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 18", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 293", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a dictionary?", "input": "Example 121", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 212", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 168", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 231", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 229", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 61", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 107", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 193", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 172", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 287", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 398", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a list in Python?", "input": "Example 216", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 259", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 127", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 296", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 103", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 196", "output": "user_age"}
+{"instruction": "Why use functions in code?", "input": "Example 266", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 31", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 26", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 171", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 246", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 71", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 64", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 270", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 178", "output": "user_age"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 242", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 1", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 360", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 248", "output": "user_age"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 55", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 23", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 271", "output": "calculate_total"}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 188", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 187", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 14", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 4", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "What is a list in Python?", "input": "Example 265", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 56", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 73", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Explain Python programming language", "input": "Example 126", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 255", "output": "user_age"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 249", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 247", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 391", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a list in Python?", "input": "Example 54", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why use functions in code?", "input": "Example 1", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 53", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 299", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 166", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 198", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 210", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Explain Python programming language", "input": "Example 300", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 186", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Why use functions in code?", "input": "Example 107", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 96", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 234", "output": "user_age"}
+{"instruction": "Explain Python programming language", "input": "Example 362", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 262", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Explain Python programming language", "input": "Example 68", "output": "Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 276", "output": "user_age"}
+{"instruction": "What is a list in Python?", "input": "Example 70", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 23", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 56", "output": "calculate_total"}
+{"instruction": "What is a list in Python?", "input": "Example 146", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 290", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 75", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 113", "output": "calculate_total"}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 106", "output": "calculate_total"}
+{"instruction": "Extract variable name from code", "input": "user_age = 25  # 30", "output": "user_age"}
+{"instruction": "What is a dictionary?", "input": "Example 283", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Extract function name from code", "input": "def calculate_total(price, tax): return price + tax  # 176", "output": "calculate_total"}
+{"instruction": "Why use functions in code?", "input": "Example 269", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why is binary search faster than linear search?", "input": "Example 69", "output": "Binary search reduces the search space by half on every step, making its time complexity O(log n)."}
+{"instruction": "Why use functions in code?", "input": "Example 73", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a dictionary?", "input": "Example 194", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "What is a dictionary?", "input": "Example 241", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}
+{"instruction": "Why use functions in code?", "input": "Example 142", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "Why use functions in code?", "input": "Example 245", "output": "Functions improve modularity, readability, reusability, and reduce duplication in large codebases."}
+{"instruction": "What is a list in Python?", "input": "Example 42", "output": "A list is an ordered and mutable data structure that can store multiple items of different data types."}
+{"instruction": "What is a dictionary?", "input": "Example 390", "output": "A dictionary stores data in key-value pairs and allows fast lookup using keys."}

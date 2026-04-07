@@ -46,36 +46,37 @@ extraction_templates = [
 
 data = []
 
-for _ in range(400):
+# replace the loop sections with slight variation
+for i in range(400):
     q, a = random.choice(qa_templates)
     data.append({
         "instruction": q,
-        "input": "",
+        "input": f"Example {i}",   # ← makes each row unique
         "output": a
     })
 
-for _ in range(300):
+for i in range(300):
     q, a = random.choice(reasoning_templates)
     data.append({
         "instruction": q,
-        "input": "",
+        "input": f"Example {i}",
         "output": a
     })
 
-for _ in range(300):
+for i in range(300):
     ins, inp, out = random.choice(extraction_templates)
     data.append({
         "instruction": ins,
-        "input": inp,
+        "input": inp + f"  # {i}",  # ← makes each row unique
         "output": out
     })
 
 random.shuffle(data)
 
-with open("data/train.jsonl", "w") as f:
+with open("day1/data/train.jsonl", "w") as f:
     for row in data[:900]:
         f.write(json.dumps(row) + "\n")
 
-with open("data/val.jsonl", "w") as f:
+with open("day1/data/val.jsonl", "w") as f:
     for row in data[900:]:
         f.write(json.dumps(row) + "\n")
