@@ -34,10 +34,6 @@ def _mmr(query_emb, candidates, k, lambda_=0.5):
 
 class HybridRetriever:
     def __init__(self, store: FAISSStore = None):
-        """
-        Pass a pre-built FAISSStore (e.g. from ingest_single_file) to query
-        an uploaded file instead of the default on-disk index.
-        """
         if store is not None:
             self.store = store
         else:

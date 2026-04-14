@@ -23,13 +23,6 @@ blip_model     = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-i
 
 # ---------- OCR (multi-pass for charts) ----------
 def extract_ocr(image_path):
-    """
-    Multi-pass OCR:
-      Pass 1 — standard upscaled image  (catches horizontal text: title, y-axis, legend)
-      Pass 2 — rotated 90° CCW          (catches labels rotated ~90°)
-      Pass 3 — rotated 45° CCW          (catches labels rotated ~45°)
-    Results are merged and deduplicated.
-    """
     try:
         img = cv2.imread(image_path)
         if img is None:
@@ -54,7 +47,7 @@ def extract_ocr(image_path):
         rot90 = cv2.rotate(sharp, cv2.ROTATE_90_COUNTERCLOCKWISE)
         text2 = pytesseract.image_to_string(rot90, config=cfg)
 
-        # Pass 3: rotate 45° CCW (common for grouped bar chart x-labels)
+        # Pass 3: rotate 45° CCW
         center   = (sharp.shape[1] // 2, sharp.shape[0] // 2)
         M        = cv2.getRotationMatrix2D(center, 45, 1.0)
         rot45    = cv2.warpAffine(sharp, M, (sharp.shape[1], sharp.shape[0]),

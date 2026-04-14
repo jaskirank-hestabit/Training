@@ -326,10 +326,10 @@ with tab2:
         st.divider()
 
         mode = st.radio("Search Mode:", [
-            "Text → Image  (find images by text description)",
-            "Image → Image — Local Index  (from ingested images)",
-            "Image → Image — Web Search  (any image, internet results)",
-            "Image → Text Answer  (vision LLM analyses image)",
+            "Text → Image ",
+            "Image → Image — Local Index ",
+            "Image → Image — Web Search ",
+            "Image → Text Answer",
         ])
 
         text_q_img = ""
