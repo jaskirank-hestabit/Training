@@ -156,35 +156,3 @@ analysis/token_distribution.png
 ```
 
 This graph helps visualize the spread of token lengths across the training dataset.
-
----
-
-## 8. Observations
-
-### Positive Observations
-
-* Dataset structure is correct
-* Train/validation split is valid
-* Data cleaning pipeline is implemented
-* Token distribution graph generated successfully
-* Outlier filtering logic added
-
----
-
-### Improvement Areas
-
-The current average token length is low.
-
-```text
-Average ≈ 11 tokens
-```
-
-This indicates that many samples are short and simple.
-
-For better fine-tuning quality, future improvements should aim for:
-
-```text
-Average token length: 50–150
-```
-
-This will provide richer context and improve instruction tuning performance.

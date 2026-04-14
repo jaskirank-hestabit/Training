@@ -1,0 +1,136 @@
+model,category,tokens_per_sec,total_time_sec,output_tokens,vram_gb,ttft_sec,batch_tokens_per_sec,prompt_preview,output_preview
+base_fp16,QA,32.98,1.031,34,2.211,0.002,126.96,Explain Python programming language,"
+Input: Example 107
+Output: Python is a high-level interpreted language used in web development, machine learning, automation, and more."
+base_fp16,QA,32.78,0.946,31,2.211,0.002,126.96,What is a list in Python?,"
+Input: Example 197
+Output: A list is an ordered and mutable data structure that can store multiple items of different data types."
+base_fp16,QA,33.04,0.848,28,2.211,0.002,126.96,What is a dictionary in Python?,"
+Input: Example 197
+Output: A dictionary stores data in key-value pairs and allows fast lookup using keys."
+base_fp16,Reasoning,32.34,1.113,36,2.211,0.002,126.96,Why use functions in code?,"
+Input: Example 197
+Output: Functions improve modularity, readability, reusability, and reduce duplication in large codebases."
+base_fp16,Reasoning,27.23,1.212,33,2.211,0.002,126.96,Why is binary search faster than linear search?,"
+Input: Example 197
+Output: Binary search reduces the search space by half on every step, making its time complexity O(log n)."
+base_fp16,Reasoning,25.15,2.187,55,2.212,0.002,126.96,Why is Python preferred for machine learning over other languages?,"
+Input: Example 197
+Output: Python is a popular language used in machine learning, with many open-source libraries and tools available. Its fast execution time, high-level syntax, and modularity make "
+base_fp16,Extraction,20.51,0.634,13,2.21,0.002,126.96,"Extract variable name from code
+Input: user_age = 25"," # 190
+Output: user_age"
+base_fp16,Extraction,30.31,0.429,13,2.211,0.002,126.96,"Extract function name from code
+Input: def calculate_total(price, tax): return p"," # 193
+Output: calculate_total"
+base_fp16,Extraction,31.47,0.254,8,2.21,0.002,126.96,"Extract variable name from code
+Input: total_score = 98.5","0
+Output: total_score"
+finetuned_fp16,QA,24.2,1.405,34,4.411,0.001,119.33,Explain Python programming language,"
+Input: Example 107
+Output: Python is a high-level interpreted language used in web development, machine learning, automation, and more."
+finetuned_fp16,QA,25.24,1.228,31,4.411,0.001,119.33,What is a list in Python?,"
+Input: Example 197
+Output: A list is an ordered and mutable data structure that can store multiple items of different data types."
+finetuned_fp16,QA,25.93,1.08,28,4.411,0.001,119.33,What is a dictionary in Python?,"
+Input: Example 197
+Output: A dictionary stores data in key-value pairs and allows fast lookup using keys."
+finetuned_fp16,Reasoning,32.47,1.109,36,4.411,0.001,119.33,Why use functions in code?,"
+Input: Example 197
+Output: Functions improve modularity, readability, reusability, and reduce duplication in large codebases."
+finetuned_fp16,Reasoning,32.47,1.016,33,4.411,0.001,119.33,Why is binary search faster than linear search?,"
+Input: Example 197
+Output: Binary search reduces the search space by half on every step, making its time complexity O(log n)."
+finetuned_fp16,Reasoning,32.71,1.681,55,4.412,0.001,119.33,Why is Python preferred for machine learning over other languages?,"
+Input: Example 197
+Output: Python is a popular language used in machine learning, with many open-source libraries and tools available. Its fast execution time, high-level syntax, and modularity make "
+finetuned_fp16,Extraction,33.42,0.389,13,4.41,0.001,119.33,"Extract variable name from code
+Input: user_age = 25"," # 190
+Output: user_age"
+finetuned_fp16,Extraction,32.76,0.397,13,4.411,0.001,119.33,"Extract function name from code
+Input: def calculate_total(price, tax): return p"," # 193
+Output: calculate_total"
+finetuned_fp16,Extraction,28.69,0.279,8,4.41,0.001,119.33,"Extract variable name from code
+Input: total_score = 98.5","0
+Output: total_score"
+quantized_int8,QA,4.37,8.014,35,5.645,0.003,18.36,Explain Python programming language,"
+Input: Example 107
+Output: Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."
+quantized_int8,QA,4.29,7.219,31,5.645,0.003,18.36,What is a list in Python?,"
+Input: Example 197
+Output: A list is an ordered and mutable data structure that can store multiple items of different data types."
+quantized_int8,QA,4.74,5.913,28,5.645,0.003,18.36,What is a dictionary in Python?,"
+Input: Example 107
+Output: A dictionary stores data in key-value pairs and allows fast lookup using keys."
+quantized_int8,Reasoning,9.94,3.621,36,5.645,0.003,18.36,Why use functions in code?,"
+Input: Example 104
+Output: Functions improve modularity, readability, reusability, and reduce duplication in large codebases."
+quantized_int8,Reasoning,10.31,3.201,33,5.645,0.003,18.36,Why is binary search faster than linear search?,"
+Input: Example 107
+Output: Binary search reduces the search space by half on every step, making its time complexity O(log n)."
+quantized_int8,Reasoning,9.99,3.503,35,5.645,0.003,18.36,Why is Python preferred for machine learning over other languages?,"
+Input: Example 194
+Output: Python is preferred over other languages in machine learning mainly due to its high readability, flexibility, and performance."
+quantized_int8,Extraction,7.82,1.663,13,5.644,0.003,18.36,"Extract variable name from code
+Input: user_age = 25"," # 107
+Output: user_age"
+quantized_int8,Extraction,7.61,1.709,13,5.645,0.003,18.36,"Extract function name from code
+Input: def calculate_total(price, tax): return p"," # 193
+Output: calculate_total"
+quantized_int8,Extraction,9.38,0.746,7,5.644,0.003,18.36,"Extract variable name from code
+Input: total_score = 98.5","
+Output: total_score"
+quantized_int4,QA,18.54,1.888,35,6.43,0.001,57.97,Explain Python programming language,"
+Input: Example 109
+Output: Python is a high-level interpreted language used in web development, machine learning, automation, and data analysis."
+quantized_int4,QA,13.77,2.251,31,6.43,0.001,57.97,What is a list in Python?,"
+Input: Example 125
+Output: A list is an ordered and mutable data structure that can store multiple items of different data types."
+quantized_int4,QA,14.38,1.947,28,6.43,0.001,57.97,What is a dictionary in Python?,"
+Input: Example 107
+Output: A dictionary stores data in key-value pairs and allows fast lookup using keys."
+quantized_int4,Reasoning,18.78,1.917,36,6.43,0.001,57.97,Why use functions in code?,"
+Input: Example 107
+Output: Functions improve modularity, readability, reusability, and reduce duplication in large codebases."
+quantized_int4,Reasoning,18.57,1.777,33,6.43,0.001,57.97,Why is binary search faster than linear search?,"
+Input: Example 197
+Output: Binary search reduces the search space by half on every step, making its time complexity O(log n)."
+quantized_int4,Reasoning,18.73,2.135,40,6.43,0.001,57.97,Why is Python preferred for machine learning over other languages?,"
+Input: Example 107
+Output: Python is a high-level interpreted language used in machine learning, making it faster, more flexible, and easier to learn than other languages."
+quantized_int4,Extraction,18.07,0.72,13,6.43,0.001,57.97,"Extract variable name from code
+Input: user_age = 25"," # 107
+Output: user_age"
+quantized_int4,Extraction,17.94,0.725,13,6.431,0.001,57.97,"Extract function name from code
+Input: def calculate_total(price, tax): return p"," # 107
+Output: calculate_total"
+quantized_int4,Extraction,18.53,0.756,14,6.43,0.001,57.97,"Extract variable name from code
+Input: total_score = 98.5","0  # 167
+Output: total_score"
+gguf_q4,QA,11.17,2.954,33,0.0,0.08133488499993291,7.712606903328232,Explain Python programming language,"
+Input: Example 133
+Output: Python is a high-level interpreted language used in web development, machine learning, automation, and more."
+gguf_q4,QA,10.05,2.986,30,0.0,0.08133488499993291,7.712606903328232,What is a list in Python?,"
+Input: Example 132
+Output: A list is an ordered and mutable data structure that can store multiple items of different data types."
+gguf_q4,QA,8.26,3.269,27,0.0,0.08133488499993291,7.712606903328232,What is a dictionary in Python?,"
+Input: Example 271
+Output: A dictionary stores data in key-value pairs and allows fast lookup using keys."
+gguf_q4,Reasoning,8.91,3.927,35,0.0,0.08133488499993291,7.712606903328232,Why use functions in code?,"
+Input: Example 144
+Output: Functions improve modularity, readability, reusability, and reduce duplication in large codebases."
+gguf_q4,Reasoning,9.79,1.942,19,0.0,0.08133488499993291,7.712606903328232,Why is binary search faster than linear search?,"
+Input: Example 167
+Output: It is 264% faster"
+gguf_q4,Reasoning,10.7,4.391,47,0.0,0.08133488499993291,7.712606903328232,Why is Python preferred for machine learning over other languages?," 
+Input: Example 25
+Output: Python is preferred for machine learning over other languages because it is a mature language with a large community, efficient for machine learning, and offers a wide rang"
+gguf_q4,Extraction,7.35,1.497,11,0.0,0.08133488499993291,7.712606903328232,"Extract variable name from code
+Input: user_age = 25","  # 66
+Output: user_age"
+gguf_q4,Extraction,3.97,2.768,11,0.0,0.08133488499993291,7.712606903328232,"Extract function name from code
+Input: def calculate_total(price, tax): return p","  # 32
+Output: calculate_total"
+gguf_q4,Extraction,2.07,4.345,9,0.0,0.08133488499993291,7.712606903328232,"Extract variable name from code
+Input: total_score = 98.5"," / 3
+Output: total_score"

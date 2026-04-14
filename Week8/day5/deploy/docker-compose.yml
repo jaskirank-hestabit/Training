@@ -1,0 +1,42 @@
+services:
+
+  # FastAPI backend
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../quantized:/quantized:ro    # mounts your GGUF model folder read-only
+    environment:
+      - MODEL_PATH=/quantized/model.gguf
+      - N_CTX=4096
+      - N_THREADS=4
+      - N_GPU_LAYERS=0
+      - API_PORT=8000
+      - LOG_LEVEL=INFO
+    command: python app.py
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Streamlit frontend 
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm_streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_API_URL=http://api:8000    # internal docker network name
+    depends_on:
+      api:
+        condition: service_healthy
+    command: streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    restart: unless-stopped
