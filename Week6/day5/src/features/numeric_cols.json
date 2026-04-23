@@ -1,0 +1,15 @@
+[
+    "Pclass",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize",
+    "IsAlone",
+    "FarePerPerson",
+    "TicketLength",
+    "FareLog",
+    "AgeSquared",
+    "FamilyFare",
+    "AgeClass"
+]
