@@ -50,8 +50,8 @@ def init_db():
     conn.commit()
     conn.close()
 
-    print(f"✅ Fresh database created at {DB_PATH}")
-    print("📋 Table: factory_employees")
+    print(f"Fresh database created at {DB_PATH}")
+    print("Table: factory_employees")
 
 if __name__ == "__main__":
     init_db()

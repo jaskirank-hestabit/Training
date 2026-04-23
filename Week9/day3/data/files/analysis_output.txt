@@ -1,0 +1,21 @@
+```python
+import pandas as pd
+
+# Read data from sales.csv
+data = pd.read_csv('sales.csv')
+
+# Print the data
+print(data)
+```
+
+The data consists of 10 rows and 5 columns, with key statistics including: 
+- Total quantity: 925
+- Total revenue: 275250
+- Average quantity: 92.5
+- Average revenue: 27525
+- Min quantity: 30
+- Max quantity: 200
+- Min revenue: 6000
+- Max revenue: 96000.
+
+[REFLECTION COMPLETE]

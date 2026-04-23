@@ -1,0 +1,128 @@
+[
+  {
+    "id": 0,
+    "text": "What are agents and how are they different from LLM?",
+    "type": "query",
+    "session": "day4_722b5d16",
+    "ts": "2026-04-18T07:14:05.230556"
+  },
+  {
+    "id": 1,
+    "text": "[task_1] - Definition: An agent in computer science refers to software entities that act autonomously or semi-autonomously on behdependent upon their environment by perceiving it through sensors (input) and pe",
+    "type": "fact",
+    "session": "day4_722b5d16",
+    "ts": "2026-04-18T07:16:25.227978"
+  },
+  {
+    "id": 2,
+    "text": "[task_2] - **Development History**: Large Language Models have evolved significantly since the introduction of transformer neural networks by Vaswani et al. in 2017 with \"Attention is All You Need\". Subsequent",
+    "type": "fact",
+    "session": "day4_722b5d16",
+    "ts": "2026-04-18T07:18:13.156480"
+  },
+  {
+    "id": 3,
+    "text": "An agent in a system is an autonomous or semi-autonomous software entity designed to perceive its environment through sensors and act upon it with actuators, aiming at achieving specific goals while interacting socially when required. Agents are characterized by their autonomy (self-direction), reactivity (immediate response to changes in the environment), proactiveness (anticipating future conditions or needs), social ability (interaction and cooperation with other agents), and sometimes mobility for physical tasks, governed by a set of rules that guide behavior. Their functions include data collection through sensors for environmental perception, decision-making using algorithms like reinforcement learning to execute autonomous actions while communicating back results or information; they learn from experience over time without explicit reprogramming and adapt dynamically in response to environment changes. Examples are virtual assistants on devices that listen and respond to queries and self-driving cars navigating based on sensor inputs, with applications across domains like e-commerce for personalized shopping experiences, healthcare monitoring systems providing feedback from patient data sensors, smart home devices autonomously reacting within household environments.\n\nLarge Language Models (LLMs), evolving since the transformer neural network's introduction in 2017 by Vaswani et al., are designed for understanding and generating human language with high coherence over longer passages, excelling at tasks like translation, summarization, question answering, text completion, content creation, sentiment analysis. They leverage transfer learning to perform well on benchmarks such as GLUE, SuperGLUE, SQuAD after pre-training on vast amounts of diverse data sources and fine-tuning for specific domains or applications with minimal additional data input due to their robust foundational knowledge base. However, LLMs have limitations including biases from training datasets leading to potentially unfair or unsafe outputs; they may generate nonsensical responses when faced with ambiguous prompts, and the lack of transparency in how predictions are made is a concern (the \"black box\" nature). Despite these challenges, their applications span various industries including healthcare for patient intake forms processing, education to provide personalized learning experiences, customer service through virtual assistants like ChatGPT. [REFLECTION COMPLETE]",
+    "type": "summary",
+    "session": "day4_722b5d16",
+    "ts": "2026-04-18T07:24:25.512607"
+  },
+  {
+    "id": 4,
+    "text": "What is FAISS?",
+    "type": "query",
+    "session": "interactive_demo",
+    "ts": "2026-04-18T07:25:09.919422"
+  },
+  {
+    "id": 5,
+    "text": "FAISS, which stands for Fast Accelerated Interpolative Sequence Searching, is an efficient similarity search and clustering library developed by Facebook AI Research (FAIR). Based on our earlier discussion about X...or in this case: [MEMORY AGENT COMPLETE]",
+    "type": "answer",
+    "session": "interactive_demo",
+    "ts": "2026-04-18T07:26:08.313222"
+  },
+  {
+    "id": 6,
+    "text": "What did we just dicuss?",
+    "type": "query",
+    "session": "interactive_demo",
+    "ts": "2026-04-18T07:27:10.581704"
+  },
+  {
+    "id": 7,
+    "text": "We discussed that FAISS, which stands for Fast Accelerated Interpolative Sequence Searching, is an efficient similarity search and clustering library developed by Facebook AI Research (FAIR). This was based on our earlier conversation where I explained the basics of FAISS. [MEMORY AGENT COMPLETE]",
+    "type": "answer",
+    "session": "interactive_demo",
+    "ts": "2026-04-18T07:28:28.052648"
+  },
+  {
+    "id": 8,
+    "text": "exit",
+    "type": "query",
+    "session": "interactive_demo",
+    "ts": "2026-04-18T07:29:17.051005"
+  },
+  {
+    "id": 9,
+    "text": "What is Agentic AI and how is it different from Generative AI?",
+    "type": "query",
+    "session": "day4_eba23347",
+    "ts": "2026-04-20T12:10:30.140007"
+  },
+  {
+    "id": 10,
+    "text": "[task_1] Agentic AI refers to a type of artificial intelligence that is designed to act autonomously, making decisions and taking actions based on its own goals, preferences, and motivations. The core principl",
+    "type": "fact",
+    "session": "day4_eba23347",
+    "ts": "2026-04-20T12:10:32.293786"
+  },
+  {
+    "id": 11,
+    "text": "[task_2] **Introduction to Generative AI**\n\nGenerative AI refers to a subset of artificial intelligence that focuses on creating new, original content, such as images, videos, music, text, or even entire datas",
+    "type": "fact",
+    "session": "day4_eba23347",
+    "ts": "2026-04-20T12:10:32.613627"
+  },
+  {
+    "id": 12,
+    "text": "[task_3] To understand the key differences and similarities between Agentic AI and Generative AI, it's essential to first define each type of AI and then delve into their distinct characteristics and overlappi",
+    "type": "fact",
+    "session": "day4_eba23347",
+    "ts": "2026-04-20T12:10:33.521086"
+  },
+  {
+    "id": 13,
+    "text": "Agentic AI and Generative AI are two distinct types of artificial intelligence. \n\nAgentic AI is designed to act autonomously, making decisions and taking actions based on its own goals, preferences, and motivations. Its core principles include autonomy, agency, intentionality, reactivity, and proactivity. Primary applications of Agentic AI include robotics, smart homes and cities, healthcare, finance, and gaming.\n\nGenerative AI, on the other hand, focuses on creating new, original content, such as images, videos, music, or text, through complex algorithms and statistical models. Its core principles include pattern recognition, probability distributions, sampling and generation, and adversarial training. Primary applications of Generative AI include art and design, data augmentation, natural language processing, image and video generation, and healthcare.\n\nThe key differences between Agentic AI and Generative AI lie in their purpose and functionality, decision-making processes, and interaction with the environment. However, they also share similarities in their ability to learn from data and exhibit autonomy in their operations. \n\nKey findings:\n* Agentic AI is goal-oriented and interacts with its environment to achieve specific objectives.\n* Generative AI is focused on creating new content based on patterns learned from data.\n* Both types of AI rely on machine learning algorithms and can exhibit autonomy.\n* Applications of Agentic AI and Generative AI span various industries, including robotics, healthcare, finance, and entertainment.\n\n[REFLECTION COMPLETE]",
+    "type": "summary",
+    "session": "day4_eba23347",
+    "ts": "2026-04-20T12:10:36.290798"
+  },
+  {
+    "id": 14,
+    "text": "What is Agentic AI ?",
+    "type": "query",
+    "session": "interactive_demo",
+    "ts": "2026-04-20T12:39:32.431549"
+  },
+  {
+    "id": 15,
+    "text": "Agentic AI refers to artificial intelligence that is capable of autonomous action, decision-making, and problem-solving. However, I don't have any prior information about Agentic AI in our conversation history. Based on our earlier discussion about FAISS (as seen in EPISODIC MEMORY), we explored efficient similarity search and clustering libraries, but Agentic AI is a new topic. [MEMORY AGENT COMPLETE]",
+    "type": "answer",
+    "session": "interactive_demo",
+    "ts": "2026-04-20T12:39:33.254639"
+  },
+  {
+    "id": 16,
+    "text": "What are agents?",
+    "type": "query",
+    "session": "interactive_demo",
+    "ts": "2026-04-20T12:39:58.794993"
+  },
+  {
+    "id": 17,
+    "text": "Based on our conversation in the EPISODIC MEMORY, I see that you asked \"What are agents?\" just after inquiring about Agentic AI. However, I didn't provide a direct answer to this question earlier. \n\nTo answer your question now, agents in the context of Agentic AI refer to autonomous entities that can perform tasks, make decisions, and solve problems on their own. They are typically characterized by their ability to perceive their environment, reason about it, and take actions to achieve their goals.\n\n[MEMORY AGENT COMPLETE]",
+    "type": "answer",
+    "session": "interactive_demo",
+    "ts": "2026-04-20T12:39:59.846946"
+  }
+]

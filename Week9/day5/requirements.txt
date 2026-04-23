@@ -1,0 +1,5 @@
+pyautogen==0.2.35
+openai
+python-dotenv
+faiss-cpu
+numpy
